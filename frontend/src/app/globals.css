@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@600;700;800&display=swap");
+
+:root {
+    --font-copy: "Source Sans 3", sans-serif;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.hero-image {
+    --fade: 17%;
+    --fade-boundaries: calc(0% + var(--fade)) calc(100% - var(--fade));
+    mask: linear-gradient(
+        to top,
+        transparent 10%,
+        #fff var(--fade-boundaries),
+        transparent 90%
+    );
+    mask-size: 120% 120%;
+    mask-position: center;
+    mask-repeat: no-repeat;
+    mask-composite: intersect;
+}
+
+@media (min-width: 768px) {
+    .hero-content {
+        --fade: 14%;
+        --fade-boundaries: calc(0% + var(--fade)) calc(100% - var(--fade));
+        mask: linear-gradient(
+            to left,
+            transparent 10%,
+            #fff var(--fade-boundaries)
+        );
+        mask-size: 120% 120%;
+        mask-position: center;
+        mask-repeat: no-repeat;
+        mask-composite: intersect;
+    }
+}

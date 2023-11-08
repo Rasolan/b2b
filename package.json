@@ -1,0 +1,13 @@
+{
+  "name": "block2box.com",
+  "private": true,
+  "version": "0.1.0",
+  "description": "block2box.com website",
+  "author": {
+    "name": "suconakh",
+    "email": "suconakh@oru.lol"
+  },
+  "workspaces": [
+    "frontend/*"
+  ]
+}
