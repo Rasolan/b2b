@@ -11,10 +11,13 @@ import { cn } from "@/lib/utils";
 import animations from "@assets/animations.png";
 import friends from "@assets/friends.png";
 import hero from "@assets/world.jpg";
-import survive from "@assets/survive.png";
-import trade from "@assets/trade.png";
 import voice from "@assets/voice.png";
 import worlds from "@assets/worlds.png";
+
+import frent from "@assets/friends.png"
+
+const resizedfrent = require('@assets/friends.png?resize&sizes[]=400&sizes[]=800&sizes[]=1200')
+
 
 function Section({
     children,
@@ -167,19 +170,11 @@ export default function Home() {
                             компаньонов и знакомых.
                         </P>
                     </div>
-                    <ul className="grid grid-rows-3 lg:grid-cols-3 lg:grid-rows-none text-center gap-16 whitespace-nowrap">
+                    <ul className="grid grid-rows-1 lg:grid-cols-1 lg:grid-rows-none text-center gap-16 whitespace-nowrap">
                         <MiniFeatureCard
-                            image={survive}
-                            heading="Выживайте и творите"
-                        />
-                        <MiniFeatureCard
-                            image={friends}
-                            heading="Играйте с друзьями"
-                        />
-                        <MiniFeatureCard
-                            image={trade}
-                            heading="Торгуйте и покупайте"
-                        />
+                            image={friends} 
+                            heading={""}
+                            />
                     </ul>
                 </Section>
                 <Section

@@ -18,7 +18,7 @@ type RootLayoutProps = {
 };
 
 export const metadata: Metadata = {
-    title: "Block2Box - приватный сервер",
+    title: "Block2Box - Приватный Сервер",
 };
 
 export default function RootLayout({ children }: RootLayoutProps) {
