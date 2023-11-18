@@ -14,9 +14,6 @@ import hero from "@assets/world.jpg";
 import voice from "@assets/voice.png";
 import worlds from "@assets/worlds.png";
 
-import frent from "@assets/friends.png"
-
-const resizedfrent = require('@assets/friends.png?resize&sizes[]=400&sizes[]=800&sizes[]=1200')
 
 
 function Section({
@@ -40,18 +37,26 @@ type MiniFeatureCardProps = ComponentPropsWithoutRef<"li"> & {
     heading: string;
 };
 
+
+
+
+
+
 function MiniFeatureCard({
+
     image,
     heading,
     className,
     ...props
+
 }: MiniFeatureCardProps) {
     return (
         <li className="grid grid-rows-[1fr_auto] gap-12" {...props}>
             <Image
                 src={image}
                 alt={heading}
-                className="max-w-xs"
+                width={1613}
+                height={463}
                 placeholder="blur"
                 blurDataURL="iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNkYPhfDwAChwGA60e6kgAAAABJRU5ErkJggg=="
             />
@@ -161,8 +166,8 @@ export default function Home() {
                 </div>
             </section>
             <div className="max-w-7xl mx-auto">
-                <Section className="flex flex-col items-center gap-16">
-                    <div className="flex flex-col items-center text-center max-w-lg gap-4">
+                <Section className="flex flex-col items-center gap-5">
+                    <div className="flex flex-col items-center text-center max-w-lg gap-3">
                         <H2>Сервер - виртуальная жизнь</H2>
                         <P>
                             Игроки присоединяются к серверу, чтобы
@@ -170,17 +175,16 @@ export default function Home() {
                             компаньонов и знакомых.
                         </P>
                     </div>
-                    <ul className="grid grid-rows-1 lg:grid-cols-1 lg:grid-rows-none text-center gap-16 whitespace-nowrap">
+                    <ul className="">
                         <MiniFeatureCard
                             image={friends} 
                             heading={""}
-                            />
+                        />       
                     </ul>
                 </Section>
                 <Section
                     id="features"
-                    className="bg-b2b-blue-700 relative w-screen -ml-[50vw] left-1/2 my-16 max-w-none"
-                >
+                    className="bg-b2b-blue-700 relative w-screen -ml-[50vw] left-1/2 my-0 max-w-none">
                     <div className="max-w-7xl mx-auto flex flex-col text-center items-center py-16 px-4">
                         <H2>Совместная игра без привилегий!</H2>
                         <H3>
@@ -257,7 +261,7 @@ export default function Home() {
                                 <li>Доступ ко всему функционалу сервера</li>
                                 <li>Minecraft Java Edition 1.20.1</li>
                             </ul>
-                            <Button as={Link} href="#" variant="tertiary">
+                            <Button as={Link} href="/shop" variant="tertiary">
                                 Купить проходку за 100₽
                             </Button>
                         </StartPlayingCard>
@@ -269,7 +273,7 @@ export default function Home() {
                                 <li>Доступ ко всему функционалу сервера</li>
                                 <li>Minecraft Java Edition 1.20.1</li>
                             </ul>
-                            <Button as={Link} href="#" variant="secondary">
+                            <Button as={Link} href="https://discord.gg/KdPS8USr8v" variant="secondary">
                                 Подать заявку
                             </Button>
                         </StartPlayingCard>

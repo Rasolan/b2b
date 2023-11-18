@@ -17,7 +17,7 @@ export const navLinks: readonly NavLink[] = [
         label: "Правила",
     },
     {
-        href: "/wiki",
-        label: "Вики",
+        href: "/map",
+        label: "Карта",
     },
 ];

@@ -31,12 +31,12 @@ export default function Footer() {
                 <div>
                     <ul className="text-b2b-neutral-500 flex flex-col md:flex-row whitespace-nowrap md:gap-4 mb-4">
                         <li>
-                            <FooterLink href="#">
+                            <FooterLink href="https://wiki.block2box.com/pravila-proekta/pravila-dlya-platform">
                                 Правила для платформ
                             </FooterLink>
                         </li>
                         <li>
-                            <FooterLink href="#">
+                            <FooterLink href="https://wiki.block2box.com/pravila-proekta/politika-konfidencialnosti">
                                 Политика конфиденциальности
                             </FooterLink>
                         </li>
