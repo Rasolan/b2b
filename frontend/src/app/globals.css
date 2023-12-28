@@ -1,0 +1,94 @@
+:root {
+  --gray: #1A1A1A;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@font-face {
+  font-family: "VW";
+  src: url("../../public/fonts/ofont.ru_VAG\ World.ttf");
+}
+
+* {
+  font-family: "VW", sans-serif;
+}
+
+html {
+  background-color: var(--gray);
+  color: white;
+}
+
+.container {
+  height: 100%;
+  margin: 0 auto;
+}
+
+::-webkit-scrollbar {
+  width: 0;
+}
+
+.button {
+  width: fit-content;
+  color: white;
+  padding: 7px 20px;
+  border-radius: 9999px;
+  background: #005AE0;
+  border: 2px solid transparent ;
+  transition: 0.4s ease;
+}
+.button:hover{
+  
+  background-color:  #004BBD;
+}
+.button:active{
+  transition: 0.1s ease;
+  color: #004BBD;
+  background-color:  #ffffff;
+}
+.button:focus{
+  background-color:  #257CFF;
+  border-color:  #FFAF14;
+}
+.button-outline {
+  width: fit-content;
+  border-radius: 9999px;
+  padding: 7px 20px;
+  color: #FFAF14;
+  border: 2px solid #FFAF14;
+  background-color: transparent;
+  transition: 0.4s ease;
+}
+.button-outline:hover{
+  border-color:  #AD7400;
+  color:  #AD7400;
+}
+.button-outline:active{
+  transition: 0.1s ease;
+  border-color:  #ffffff;
+  color:  #ffffff;
+}
+.button-outline:focus{
+  border: 2px dashed var(--colors-yellow-500, #FFAF14);
+}
+.button-discord {
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 20px;
+  font-weight: 900;
+  border-radius: 32px;
+  background-color: #257CFF;
+}
+.button-discord span{
+
+  font-family: inherit;
+}
+.button-discord img{
+  margin-left: 13px;
+}
+.button-discord:hover{
+  transition: 0.4s ease;
+  background-color:  #004BBD;
+}

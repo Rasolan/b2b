@@ -1,0 +1,35 @@
+.header{
+    padding-top: 5px;
+    background-color: rgba(31, 31, 31, 0.54);
+    border-bottom: 1px solid #696969;
+    height: 75px;
+    display: flex;
+}
+.header__container{
+    min-width: 875px;
+    align-items: center;
+    display: flex;
+}
+
+.header__logo{
+    width: 41px;
+    flex: 0 0 auto;
+}
+
+.header__nav{
+    padding: 0;
+    margin-left: 44px;
+    list-style: none;
+    gap: 0 15px;
+    display: flex;
+    flex: 1 1 auto;
+}
+.header__nav a:hover{
+    transition: 0.3s ease;
+    
+    color: #FFAF14;
+}
+.header__user{
+    flex: 0 0 auto;   
+    width: 26px;
+}
