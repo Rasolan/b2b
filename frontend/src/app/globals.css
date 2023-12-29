@@ -2,8 +2,6 @@
   --gray: #1A1A1A;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
 @font-face {
   font-family: "VW";
   src: url("../../public/fonts/ofont.ru_VAG\ World.ttf");
@@ -14,6 +12,7 @@
 }
 
 html {
+  position: relative;
   background-color: var(--gray);
   color: white;
 }
@@ -30,7 +29,7 @@ html {
 .button {
   width: fit-content;
   color: white;
-  padding: 7px 20px;
+  padding: 7px 27px;
   border-radius: 9999px;
   background: #005AE0;
   border: 2px solid transparent ;
@@ -52,7 +51,7 @@ html {
 .button-outline {
   width: fit-content;
   border-radius: 9999px;
-  padding: 7px 20px;
+  padding: 7px 27px;
   color: #FFAF14;
   border: 2px solid #FFAF14;
   background-color: transparent;
@@ -69,26 +68,4 @@ html {
 }
 .button-outline:focus{
   border: 2px dashed var(--colors-yellow-500, #FFAF14);
-}
-.button-discord {
-  font-family: 'Poppins', sans-serif;
-  color: white;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  padding: 10px 20px;
-  font-weight: 900;
-  border-radius: 32px;
-  background-color: #257CFF;
-}
-.button-discord span{
-
-  font-family: inherit;
-}
-.button-discord img{
-  margin-left: 13px;
-}
-.button-discord:hover{
-  transition: 0.4s ease;
-  background-color:  #004BBD;
 }
