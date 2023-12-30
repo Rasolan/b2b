@@ -1,7 +1,9 @@
 import type { Metadata } from 'next'
 
-import './globals.css'
 import './clear.css'
+import './fonts.css'
+import './globals.css'
+
 import Header from '@/components/header/header'
 import Footer from '@/components/footer/footer'
 
@@ -20,7 +22,7 @@ export default function RootLayout({
   return (
     <html lang="ru">
       <Header/>
-      <main>{children}</main>
+      <section className='content'>{children}</section>
       <Footer/>
     </html>
   )

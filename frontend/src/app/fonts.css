@@ -1,0 +1,18 @@
+@font-face {
+    font-family: "VW";
+    src: url("../../public/fonts/ofont.ru_VAG\ World.ttf");
+}
+
+@font-face {
+    font-family: Poppins;
+    src: url(../../public/fonts/Poppins/Poppins-Regular.ttf);
+    font-weight: normal;
+}
+@font-face {
+    font-family: Poppins;
+    src: url(../../public/fonts/Poppins/Poppins-Bold.ttf);
+    font-weight: bold;
+}
+
+  
+  

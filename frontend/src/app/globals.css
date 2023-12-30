@@ -1,10 +1,7 @@
+
+
 :root {
   --gray: #1A1A1A;
-}
-
-@font-face {
-  font-family: "VW";
-  src: url("../../public/fonts/ofont.ru_VAG\ World.ttf");
 }
 
 * {
@@ -22,11 +19,9 @@ html {
   margin: 0 auto;
 }
 
-::-webkit-scrollbar {
-  width: 0;
-}
 
 .button {
+  display: inline-block;
   width: fit-content;
   color: white;
   padding: 7px 27px;
