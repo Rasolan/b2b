@@ -1,0 +1,53 @@
+.answers__accordions {
+    display: flex;
+    gap: 40px 0;
+    flex-direction: column;
+}
+
+.answers__accordion {
+    width: fit-content;
+}
+
+.accordion__question {
+    border-bottom: 1px solid #3B3B3B;
+    display: flex;
+    align-items: center;
+    padding: 7px 0;
+    font-size: 24px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.accordion__answer {
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 1.54;
+    color: #DBDBDB;
+    padding: 27px 0px;
+    transition: 0.3s ease;
+}
+
+.accordion__answer-open {
+    opacity: 1;
+    height: auto;
+    display: block;
+}
+
+.accordion__answer-close {
+    opacity: 0;
+    padding: 0;
+    height: 0;
+    display: none;
+}
+
+.accordion__arrow {
+    width: 18px;
+    height: 12px;
+    margin: 0 24px 0 12px;
+    transition: 0.3s ease;
+}
+
+.accordion__arrow-active {
+    transform: rotate(180deg);
+}

@@ -21,9 +21,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="ru">
-      <Header/>
-      <section className='content'>{children}</section>
-      <Footer/>
+      <body>
+        <Header />
+        <section className='content'>{children}</section>
+        <Footer />
+      </body>
+
     </html>
   )
 }

@@ -1,0 +1,71 @@
+.answers {
+    margin: 127px 0;
+}
+
+.answer__container {
+    max-width: 950px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.answers__info,
+.answer__discord {
+    flex: 0 0 50%;
+}
+
+.answers__title {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 78px;
+}
+
+
+
+.answer__discord {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.answers__card {
+    width: 308px;
+    padding: 24px 28px;
+    border-radius: 30px;
+    border: 2px solid #3B3B3B;
+    background: #242424;
+    transition: 0.3s ease-in-out;
+}
+
+.answers__card:hover {
+    border: 2px solid #525252;
+    background: #3B3B3B;
+}
+
+.cards-header__title {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 26px;
+}
+
+.cards-header__text {
+    color: #C4C4C4;
+    font-family: "Poppins", "VW";
+    font-size: 10px;
+    font-weight: 700;
+    line-height: 1.48;
+}
+
+.answers__card-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 26px;
+}
+
+.cards-header__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 16px;
+    background: #0A6CFF;
+    padding: 15px 12px;
+}

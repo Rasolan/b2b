@@ -11,19 +11,20 @@
 }
 
 .footer__info {
-    flex: 0 0 470px;
+    flex: 0 0 520px;
     display: flex;
     flex-direction: column;
     gap: 11px 0;
     color: #3C3C3C;
     font-weight: bold;
-    font-size: 12px;
+    font-size: 14px;
 }
 
 .footer__rules {
     color: #808080;
     display: flex;
     gap: 0 16px;
+    font-size: 14px;
 }
 
 .footer__rules a {

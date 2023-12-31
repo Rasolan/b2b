@@ -1,0 +1,57 @@
+.about {
+    margin: 266px 0 116px 0;
+}
+
+.about__container {
+    max-width: 1200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about__info,
+.about__image {
+    width: 50%;
+}
+
+/* .about__blur{
+    background-image: url('../../public/images/about.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: blur(80px);
+} */
+.about__image {
+    position: relative;
+}
+
+.about__blur {
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-image: url("../../../../../public/images/about.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: blur(80px);
+    z-index: -1;
+}
+
+
+.about__title {
+    font-size: 44px;
+    font-weight: bold;
+    margin-bottom: 17px;
+}
+
+.about__subtitle {
+    color: #C4C4C4;
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.48;
+}
+
+

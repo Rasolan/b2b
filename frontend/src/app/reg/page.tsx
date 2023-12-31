@@ -1,8 +1,4 @@
-'use client';
-import React from 'react'
-
-
-
+import React from "react"
 import Input from "@/components/input/input"
 import FormHeader from "@/components/formHeader/formHeader"
 import ButtonDiscord from "@/components/buttonDiscord/buttonDiscord"
@@ -14,9 +10,9 @@ import MainSlider from '@/components/mainSlider/mainSlider'
 const Reg = () => {
     return (
         <section className="reg">
+            
             <div className="container reg__container">
                 <div className="reg__window">
-                    <MainSlider/>
                     <div className="reg__form">
                         <FormHeader/>
                         <Input placeholder="Введите логин" type="text" className="form__input"></Input>

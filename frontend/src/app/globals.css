@@ -1,5 +1,3 @@
-
-
 :root {
   --gray: #1A1A1A;
 }
@@ -27,22 +25,38 @@ html {
   padding: 7px 27px;
   border-radius: 9999px;
   background: #005AE0;
-  border: 2px solid transparent ;
+  border: 2px solid transparent;
   transition: 0.4s ease;
 }
-.button:hover{
-  
-  background-color:  #004BBD;
+
+.button:hover {
+
+  background-color: #004BBD;
 }
-.button:active{
+
+.button:active {
   transition: 0.1s ease;
   color: #004BBD;
-  background-color:  #ffffff;
+  background-color: #ffffff;
 }
-.button:focus{
-  background-color:  #257CFF;
-  border-color:  #FFAF14;
+.button-white{
+  color: #004BBD;
+  background-color: #ffffff;
+  display: inline-block;
+  width: fit-content;
+  padding: 7px 27px;
+  border-radius: 9999px;
+  border: 2px solid transparent;
+  transition: 0.4s ease;
 }
+.button-white:hover{
+  background-color: #d4d4d4;
+}
+.button:focus {
+  background-color: #257CFF;
+  border-color: #FFAF14;
+}
+
 .button-outline {
   width: fit-content;
   border-radius: 9999px;
@@ -52,15 +66,28 @@ html {
   background-color: transparent;
   transition: 0.4s ease;
 }
-.button-outline:hover{
-  border-color:  #AD7400;
-  color:  #AD7400;
+
+.button-outline:hover {
+  border-color: #AD7400;
+  color: #AD7400;
 }
-.button-outline:active{
+
+.button-outline:active {
   transition: 0.1s ease;
-  border-color:  #ffffff;
-  color:  #ffffff;
+  border-color: #ffffff;
+  color: #ffffff;
 }
-.button-outline:focus{
+
+.button-outline:focus {
   border: 2px dashed var(--colors-yellow-500, #FFAF14);
+}
+
+.tag {
+  text-align: center;
+  flex: 16;
+  font-weight: bold;
+  border-radius: 8px;
+  background: var(--colors-blue-800, #004BBD);
+  padding: 8px 20px;
+  display: inline-block;
 }

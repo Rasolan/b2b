@@ -2,10 +2,10 @@
     position: sticky;
     top: 0;
     z-index: 10 ;
-    padding-top: 5px;
+    padding-top: 10px;
     background-color: rgba(31, 31, 31, 0.54);
     border-bottom: 1px solid #696969;
-    height: 75px;
+    height: 70px;
     display: flex;
     backdrop-filter: blur(21.5px);
 }
@@ -17,23 +17,29 @@
 
 .header__logo{
     width: 41px;
-    flex: 0 0 auto;
 }
 
 .header__nav{
     padding: 0;
     margin-left: 44px;
     list-style: none;
-    gap: 0 15px;
+    gap: 0 10px;
     display: flex;
+    align-items: center;
+    justify-content: center;
     flex: 1 1 auto;
+}
+.header__nav a{
+    padding: 0 25px;
+    border-bottom: 2px solid #3B3B3B;;
 }
 .header__nav a:hover{
     transition: 0.3s ease;
-    
-    color: #FFAF14;
+    border-radius: 8px 8px 0px 0px;
+    background: rgba(39, 39, 39, 0.70);
+    border-color: #FFAF14;
+
 }
-.header__user{
-    flex: 0 0 auto;   
+.header__user{  
     width: 26px;
 }

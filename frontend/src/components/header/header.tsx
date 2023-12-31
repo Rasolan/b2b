@@ -22,6 +22,9 @@ const Header = () => {
                 <li>
                     <Link href={"/"}>Вики</Link>
                 </li>
+                <li>
+                    <Link href={"/"}>Карта</Link>
+                </li>
             </ul>
             <Link href={"/"}>
                 <Image alt='user icon' src={User} className="header__user"/>
