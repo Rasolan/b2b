@@ -1,7 +1,7 @@
 import React from "react"
 import Input from "@/components/input/input"
 import FormHeader from "@/components/formHeader/formHeader"
-import ButtonDiscord from "@/components/buttonDiscord/buttonDiscord"
+import ButtonDiscord from "@/components/buttonDiscord2/buttonDiscord"
 
 import "./style.css"
 import Link from 'next/link'
