@@ -1,0 +1,29 @@
+.backgroundImage{
+    width: 100%;
+    height: 100%;
+}
+.swiper{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+.swiperSlider img{
+    width: 100%;
+    height: 100%;
+}
+.swiper-pagination{
+    text-align-last: left;
+    padding: 0 0 0 100px;
+}
+.swiper-pagination-bullet{
+    background: white;
+    opacity: 1;
+}
+.swiper-pagination-bullet-active{
+    background: #3a3a3a;
+    opacity: 1;
+    border: 2px solid white;
+}
