@@ -19,6 +19,7 @@ html {
 
 
 .button {
+  cursor: pointer;
   display: inline-block;
   width: fit-content;
   color: white;

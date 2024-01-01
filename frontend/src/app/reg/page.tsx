@@ -7,12 +7,18 @@ import "./style.css"
 import Link from 'next/link'
 import MainSlider from '@/components/mainSlider/mainSlider'
 
+const images = [
+    {"url": "/mainSlider/1.png"},
+    {"url": "/mainSlider/2.png"},
+    {"url": "/mainSlider/3.png"},
+    {"url": "/mainSlider/4.png"}
+  ]
 const Reg = () => {
     return (
         <section className="reg">
             <div className="container reg__container">
                 <div className="reg__window">
-                    <MainSlider></MainSlider>
+                    <MainSlider imgs={images}></MainSlider>
                     <div className="reg__form">
                         <FormHeader/>
                         <Input placeholder="Введите логин" type="text" className="form__input"></Input>

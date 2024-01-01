@@ -12,13 +12,8 @@ import 'swiper/css/effect-fade';
 import 'swiper/css/scrollbar';
 import './mainSlider.css'
 
-const images = [
-  {"url": "1.png"},
-  {"url": "2.png"},
-  {"url": "3.png"},
-  {"url": "4.png"}
-]
-export default () => {
+
+export default (props: any) => {
   return (
     <Swiper
     className='mainSwiper'
@@ -35,8 +30,8 @@ export default () => {
       // navigation={true}
       pagination={{ clickable: true }}
     >
-      {images.map((item) => {
-        return (<SwiperSlide className='swiperSlider'><img src={`/images/mainSlider/${item.url}`} alt="background image" /></SwiperSlide>)
+      {props.imgs.map((item : any) => {
+        return (<SwiperSlide className='swiperSlider'><img src={`/images/${item.url}`} alt="background image" /></SwiperSlide>)
       })}
       
     </Swiper>

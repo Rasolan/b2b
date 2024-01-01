@@ -14,19 +14,19 @@ const Header = () => {
             </Link>
             <ul className="header__nav">
                 <li>
-                    <Link href={"/"}>Магазин</Link>
+                    <Link href={"/shop"}>Магазин</Link>
                 </li>
                 <li>
-                    <Link href={"/"} >Правила</Link>
+                    <Link href={"/wiki/rules"} >Правила</Link>
                 </li>
                 <li>
-                    <Link href={"/"}>Вики</Link>
+                    <Link href={"/wiki"}>Вики</Link>
                 </li>
                 <li>
-                    <Link href={"/"}>Карта</Link>
+                    <Link href={"/map"}>Карта</Link>
                 </li>
             </ul>
-            <Link href={"/"}>
+            <Link href={"/reg"}>
                 <Image alt='user icon' src={User} className="header__user"/>
             </Link>
         </div>
