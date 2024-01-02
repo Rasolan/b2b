@@ -107,7 +107,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     overflow: hidden;
-    height: 620px;
+    height: 668px;
     border-radius: 32px;
     border: 2px solid #525252;
     background: rgba(43, 43, 43, 0.54);
@@ -126,13 +126,17 @@
 
 .shop__sidebar-footer {
     border-top: 1px solid #525252;
+    padding: 22px 26px;
 }
 
 .shop__sidebar-footer div {
+    cursor: pointer;
+    border-radius: 20px;
     padding: 30px 26px;
     color: #9C9C9C;
     font-family: 'Poppins', sans-serif;
     font-size: 15px;
+    border: 2px solid transparent;
     font-weight: 900;
     display: flex;
     align-items: center;
@@ -151,16 +155,38 @@
 }
 
 .shop__sidebar-title {
+    cursor: pointer;
+    fill: #9C9C9C;
+    color: #9C9C9C;
     font-family: "Poppins", sans-serif;
     font-size: 15px;
     font-weight: 900;
     border-radius: 20px;
-    border: 2px solid #004BBD;
-    background: #005AE0;
-    padding: 22px 26px;
+    border: 2px solid transparent;
+    padding: 0 26px;
     display: flex;
     align-items: center;
     gap: 0 15px;
+}
+
+.shop__sidebar-title-active {
+    padding: 22px 26px;
+}
+
+.shop__sidebar-title-active,
+.shop__sidebar-footer-active div {
+    fill: white;
+    color: white;
+    border: 2px solid #004BBD;
+    background: #005AE0;
+}
+
+.shop__sidebar-footer-active div img {
+    fill: white;
+}
+
+.shop__sidebar-title-active+.shop__sidebar-nav {
+    display: flex;
 }
 
 .shop__sidebar-title img {
@@ -171,7 +197,7 @@
 .shop__sidebar-nav {
     list-style: none;
     padding: 30px 10px 0 10px;
-    display: flex;
+    display: none;
     margin: 0;
     flex-direction: column;
     gap: 30px 0;
@@ -190,9 +216,25 @@
 
 
 
+.shop__tickets {
+    display: flex;
+}
 
+.shop__sidebar-cosmetics+.shop__market .shop__tickets {
+    display: none;
+}
 
+.shop__cards {
+    display: none;
+}
 
+.shop__sidebar-cosmetics+.shop__market .shop__cards {
+    display: grid;
+}
+
+.shop__sidebar-cosmetics+.shop__market .shop__pagination {
+    display: flex;
+}
 
 .shop__card-image {
     display: flex;
@@ -246,7 +288,7 @@
 
 .shop__pagination {
     margin-top: 75px;
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: center;
     gap: 0 17px;
@@ -265,13 +307,77 @@
 
 .shop__pagination p.active {
     background: #257BFB;
-    color:  #3B3B3B;
+    color: #3B3B3B;
     box-shadow: 0px 6px 36px 0px rgba(37, 123, 251, 0.09);
 }
-.arrowPagination{
+
+.arrowPagination {
     cursor: pointer;
     margin: 0 30px;
 }
-.arrowPagination-left{
+
+.arrowPagination-left {
     transform: rotate(-180deg);
+}
+
+
+
+
+
+
+
+
+
+.shop__tickets {
+    border-radius: 32px;
+    overflow: hidden;
+    flex-direction: column;
+    background: rgba(43, 43, 43, 0.54);
+
+}
+
+.shop__ticket {
+    display: flex;
+    padding: 62px 44px;
+    align-items: center;
+}
+
+.shop__ticket-title {
+    margin-left: 27px;
+    font-size: 27px;
+    font-weight: 700;
+    flex: 1 1 auto;
+}
+.shop__ticket-buy{
+    display: flex;
+    align-items: center;
+    gap: 0 4px;
+}
+.shop__ticket-info{
+    padding: 0 4px;
+
+}
+
+.shop__ticket-icon {
+    border-radius: 19px;
+    background: #1D1D1D;
+    padding: 17px 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.shop__ticket-icon img {
+    width: 65px;
+    height: 42px;
+}
+
+.shop__ticket-yellow {
+    background: linear-gradient(90deg, rgba(203,139,4,0.15) 0%, rgba(203,139,4,0.3) 10%, rgba(43,43,43,0.54) 45%);
+}
+.shop__ticket-blue{
+    background: linear-gradient(90deg, rgba(4,92,227,0.15) 0%, rgba(4,92,227,0.3) 10%, rgba(43,43,43,0.54) 45%);
+}
+.shop__ticket-buy .button {
+    display: inline;
 }

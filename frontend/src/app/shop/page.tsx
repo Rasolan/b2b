@@ -1,6 +1,5 @@
 "use client";
 import React, { useState, useEffect } from 'react'
-
 import Image from 'next/image'
 import MainSlider from '@/components/mainSlider/mainSlider'
 import Key from "$/public/svg/key.svg"
@@ -15,6 +14,8 @@ import Info from "$/public/svg/info.svg"
 import ArrowPagination from "$/public/svg/arrowPagination.svg"
 import "./style.css"
 import Link from 'next/link'
+import TicketYellow from '$/public/images/ticketYellow.png'
+import TicketBlue from '$/public/images/ticketBlue.png'
 import { url } from 'inspector';
 const images = [
     { "url": "/shopSlider/1.png" },
@@ -58,6 +59,7 @@ const page = () => {
     const [loading, setLoading] = useState(false)
     const [currentPage, setCurrentPage] = useState(1)
     const [cardsPerPage]: any = useState([4])
+    const [shopCategory, setShopCategory] = useState("cosmetics")
 
     const lastCardIndec = currentPage * cardsPerPage
     const firstCardIndex = lastCardIndec - cardsPerPage
@@ -70,6 +72,8 @@ const page = () => {
     const paginate = (pageNumber: number) => setCurrentPage(pageNumber)
     const pageNext = () => currentPage < pageNumbers.length ? setCurrentPage(currentPage + 1) : currentPage
     const pagePrev = () => currentPage > 1 ? setCurrentPage(currentPage - 1) : currentPage
+    
+    
     return (
         <section className='shop'>
             <div className="container shop__container">
@@ -93,11 +97,11 @@ const page = () => {
                     </div>
                 </div>
                 <div className="shop__content">
-                    <div className="shop__sidebar">
+                    <div className={shopCategory === "cosmetics" ? 'shop__sidebar shop__sidebar-cosmetics' : 'shop__sidebar'}>
                         <div className="shop__sidebar-header"><p>Категории</p></div>
                         <div className="shop__sidebar-content">
-                            <div className="shop__sidebar-title"><Image src={Star} alt={'star'} />Косметика</div>
-                            <ul className="shop__sidebar-nav">
+                            <div onClick={() => setShopCategory('cosmetics')} className={shopCategory === "cosmetics" ? 'shop__sidebar-title shop__sidebar-title-active' : 'shop__sidebar-title'}><Image src={Star} alt={'star'} />Косметика</div>
+                            <ul className='shop__sidebar-nav'>
                                 <li>
                                     <Link className="shop__sidebar-link" href={''}><Image src={Market} alt={'market'} />Набор косметики</Link>
                                 </li>
@@ -115,9 +119,27 @@ const page = () => {
                                 </li>
                             </ul>
                         </div>
-                        <div className="shop__sidebar-footer"><div><Image src={Dollar} alt={'dollar'}></Image>Проходка на сервер</div></div>
+                        <div onClick={() => setShopCategory('ticket')} className={shopCategory === "ticket" ? 'shop__sidebar-footer shop__sidebar-footer-active' : 'shop__sidebar-footer'}><div><Image src={Dollar} alt={'dollar'}></Image>Проходка на сервер</div></div>
                     </div>
                     <div className="shop__market">
+                        <div className="shop__tickets">
+                            <div className="shop__ticket shop__ticket-yellow">
+                                <div className="shop__ticket-icon"><Image src={TicketYellow} alt={'ticket'}></Image></div>
+                                <div className="shop__ticket-title">Проходка для друга</div>
+                                <div className="shop__ticket-buy">
+                                    <div className="button shop__ticket-info"><Image height={30} width={30} src={Info} alt={'info'}></Image></div>
+                                    <div className="button">Купить  60р</div>
+                                </div>
+                            </div>
+                            <div className="shop__ticket shop__ticket-blue">
+                                <div className="shop__ticket-icon"><Image src={TicketBlue} alt={'ticket'}></Image></div>
+                                <div className="shop__ticket-title">Проходка на сервер</div>
+                                <div className="shop__ticket-buy">
+                                    <div className="button shop__ticket-info"><Image height={30} width={30} src={Info} alt={'info'}></Image></div>
+                                    <div className="button">Купить 100р</div>
+                                </div>
+                            </div>
+                        </div>
                         <div className="shop__cards">
                             {currentCard.map((item) => (
                                 <div style={{
