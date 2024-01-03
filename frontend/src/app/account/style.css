@@ -1,0 +1,126 @@
+.account{
+    margin: 48px 0;
+}
+.account__container {
+    max-width: 1200px;
+}
+
+.account__dashboard {
+    border-radius: 30px;
+    border: 2px solid var(--colors-neutral-800, #3B3B3B);
+    background: linear-gradient(271deg, #242424 0.57%, #1C1B1B 131.46%);
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+    padding: 48px 86px;
+}
+
+.dashboard__title {
+    align-items: center;
+    gap: 0 24px;
+    display: flex;
+}
+
+.dashboard__title-info {
+    padding-top: 13px;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.dashboard__title-info h1 {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.dashboard__title-info h2 {
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.dashboard__info {
+    gap: 0 41px;
+    display: flex;
+    justify-content: right;
+}
+
+.dashboard__card {
+    gap: 20px 0;
+    padding: 18px 30px;
+    border-radius: 32px;
+    border: 2px solid #3B3B3B;
+    background: linear-gradient(0deg, #252525 0%, #252525 100%);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.dashboard__card-row {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 0.7fr;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dashboard__card-balance {
+    text-align: right;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.dashboard__card-numbers {
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.dashboard__card-code {
+    text-align: right;
+}
+
+.dashboard__card-code p {
+    opacity: 0.4;
+    font-family: 'Poppins', sans-serif;
+    font-size: 10px;
+    font-weight: 400;
+}
+
+.dashboard__card-date {
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.dashboard__profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.profile__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 7px;
+    border-radius: 19px;
+    border: 1px solid var(--colors-neutral-800, #3B3B3B);
+    background: var(--colors-neutral-900, #242424);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.profile__nickname {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.profile__button {
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 8px;
+    padding: 1px 20px;
+}
