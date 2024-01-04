@@ -1,0 +1,54 @@
+.account__sidebar {
+    border-radius: 32px;
+    background: #252525;
+}
+
+.account__sidebar-title {
+    padding: 30px 20px 20px 40px;
+    font-size: 32px;
+    font-weight: 700;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.account__sidebar-nav {
+    padding: 40px 20px 0 20px;
+}
+
+.account__sidebar-category {
+    margin-bottom: 24px;
+    padding: 20px 28px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    gap: 0 16px;
+    border-radius: 20px;
+    border: 2px solid rgba(0, 0, 0, 0);
+
+}
+.navLink-active{
+    border: 2px solid rgba(0, 0, 0, 0.38);
+    background: var(--colors-blue-600, #0A6CFF);
+}
+.account__sidebar-subcategory {
+    padding: 0 16px;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 17px 0;
+
+}
+
+
+.account__sidebar-subcategory li a{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    gap: 0 13px;
+    padding:13px 16px;
+    
+}
+.subcategory-active{
+    border-radius: 31px;
+    background: var(--colors-blue-800, #004BBD);
+}
