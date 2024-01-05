@@ -1,0 +1,36 @@
+.wiki__container {
+    max-width: 1300px;
+    border-radius: 32px;
+    border: 3px solid #3B3B3B;
+    height: 832px;
+    background: #202020;
+    margin: 70px auto;
+}
+
+.wiki__sidebar {
+    height: 832px;
+    border-radius: 32px;
+    border: 3px solid #3C3B3B;
+    width: 350px;
+    margin: -3px 0 -3px -3px;
+    padding: 72px 22px;
+}
+
+.wiki__sidebar-nav {
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.205)
+
+}
+
+.wiki__sidebar-link {
+    padding: 15px 33px;
+}
+
+.wiki__sidebar-link-active {
+    border-radius: 31px;
+    background: var(--colors-blue-800, #004BBD);
+}
+.wiki__sidebar-search{
+    margin-top: 33px;
+}

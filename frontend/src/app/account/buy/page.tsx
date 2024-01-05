@@ -1,9 +1,8 @@
 import React from 'react'
-
-const bye = () => {
+import { redirect } from 'next/navigation'
+export default function buy() {
+  redirect('/account/buy/active')
   return (
-    <div>bye</div>
+    <div>Buy</div>
   )
 }
-
-export default bye

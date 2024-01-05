@@ -8,5 +8,6 @@
 .account__main{
     margin-top: 44px;
     display: grid;
+    gap: 0 31px;
     grid-template-columns: 1fr 2fr
 }
