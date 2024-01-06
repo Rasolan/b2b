@@ -46,8 +46,13 @@
 .account__sidebar-subcategory li{
     padding: 0 16px;
 }
-
+.account__sidebar-subcategory li a:hover{
+    border: 2px solid var(--colors-neutral-800, #3B3B3B)
+}
 .account__sidebar-subcategory li a{
+    border-radius: 31px;
+    transition: 0.2s ease-in;
+    border: 2px solid transparent;
     display: flex;
     align-items: center;
     justify-content: left;
@@ -56,7 +61,6 @@
     
 }
 .subcategory-active{
-    border-radius: 31px;
     background: var(--colors-blue-800, #004BBD);
 }
 .navLink-active + .account__sidebar-subcategory{

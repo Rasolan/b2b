@@ -11,7 +11,7 @@ const formHeader = () => {
                 <div className="header__subtitle">Личный кабинет</div>
                 <div className="header__title">Block2Box</div>
             </div>
-            <Image alt="user login icon" src={UserLogin} className="header__image" />
+            <Image height={81} width={81} alt="user login icon" src={UserLogin} className="header__image" />
         </div>
     )
 }

@@ -9,6 +9,7 @@ const about = () => {
                 <div className="about__info">
                     <h3 className="about__title">Приватный сервер</h3>
                     <p className="about__subtitle">Это место, где постоянно происходит насыщенная и захватывающая жизнь среди сообщества сервера. Основным принципом приватного сервера является взаимное доверие игроков.</p>
+                    <div className="about__text">Мы блокируем гриферов, а повреждённые постройки восстанавливаем как можно быстрее.</div>
                 </div>
                 <div className="about__image">
                     <div className="about__blur"></div>

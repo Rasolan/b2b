@@ -1,5 +1,5 @@
 .reg__container {
-    max-width: 1200px;
+    max-width: 1300px;
 }
 
 .reg__window {
@@ -19,22 +19,27 @@
     background-size: cover; */
 }
 .reg__form{
-    width: 460px;
+    width: 591px;
     display: flex;
     align-items: center;
     flex-direction: column;
     border-radius: 30px;
-    padding: 63px 48px;
+    padding: 63px 114px;
     border: 2px solid var(--colors-neutral-800, #3B3B3B);
+    margin: -2px -2px -2px 0;
     background: rgba(36, 36, 36, 0.54);
     backdrop-filter: blur(21.5px);
 }
 .form__line{
     margin: 43px 0;
     display: block;
-    width: 389px;
+    width: 491px;
     height: 3px;
     border-radius: 8px;
     border: 0px solid  #3B3B3B;
     background: rgb(194, 218, 255, 0.16);
+}
+.form__button{
+    font-size: 18px;
+    font-weight: 700;
 }

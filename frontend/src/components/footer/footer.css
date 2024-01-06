@@ -5,7 +5,7 @@
 }
 
 .footer__container {
-    max-width: 1200px;
+    max-width: 1300px;
     align-items: center;
     display: flex;
 }
@@ -25,6 +25,7 @@
     display: flex;
     gap: 0 16px;
     font-size: 14px;
+    font-weight: 700;
 }
 
 .footer__rules a {
@@ -33,8 +34,9 @@
 
 .footer__logo {
     color: #474747;
-    font-size: 30px;
+    font-size: 37px;
     text-align: right;
+    font-weight: 700;
     flex: 1 1 auto;
 }
 .footer__logo span{

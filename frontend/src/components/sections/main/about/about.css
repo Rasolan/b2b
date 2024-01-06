@@ -6,12 +6,12 @@
     max-width: 1200px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
 }
 
 .about__info,
 .about__image {
-    width: 50%;
+    width: 46%;
 }
 
 /* .about__blur{
@@ -42,7 +42,7 @@
 
 .about__title {
     font-size: 44px;
-    font-weight: bold;
+    font-weight: 700;
     margin-bottom: 17px;
 }
 
@@ -54,4 +54,11 @@
     line-height: 1.48;
 }
 
-
+.about__text {
+    margin-top: 10px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.48;
+    color: var(--colors-neutral-500, #808080);
+}

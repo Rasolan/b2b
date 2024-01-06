@@ -3,15 +3,15 @@
 }
 
 .advantages__container {
-    max-width: 1200px;
+    max-width: 1050px;
 }
 
 .advantages__cards {
-    max-width: 950px;
+    max-width: 1050px;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
-    gap: 51px 0;
+    gap: 50px 0;
 }
 
 .advantages__card {
@@ -22,7 +22,12 @@
 }
 
 .advantages__info {
-    padding: 45px 10px;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    padding-right: 100px;
+    padding-left: 17px;
 }
 
 .advantages__tags {

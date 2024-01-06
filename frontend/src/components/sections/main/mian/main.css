@@ -3,7 +3,7 @@
 }
 
 .main__container {
-    max-width: 1200px;
+    max-width: 1300px;
     display: flex;
     align-items: center;
 }
@@ -15,7 +15,7 @@
 .main__title {
     position: relative;
     color: #FFF;
-    font-size: 54px;
+    font-size: 64px;
     font-weight: 700;
     line-height: 1.1;
     margin-bottom: 33px;
@@ -27,8 +27,8 @@
     position: absolute;
     content: "";
     display: inline-block;
-    width: 93px;
-    height: 21px;
+    width: 113px;
+    height: 25px;
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -36,14 +36,14 @@
 }
 
 .main__title::before {
-    top: 156px;
-    left: 277px;
+    top: 204px;
+    left: 354px;
     background-image: url("../../../../../public/svg/lineBlue.svg");
 }
 
 .main__title::after {
-    bottom: 98px;
-    left: 472px;
+    bottom: 119px;
+    left: 596px;
     background-image: url("../../../../../public/svg/lineYellow.svg");
 }
 
@@ -51,7 +51,7 @@
     color: #DBDBDB;
     font-family: Poppins, sans-serif;
     font-size: 20px;
-    font-weight: normal;
+    font-weight: 500;
     line-height: 1.17;
     margin-bottom: 33px;
 }
@@ -62,17 +62,16 @@
 
 .main__text {
     color: #DBDBDB;
-    font-family: Poppins, sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 16px;
-    font-weight: 700;
-    line-height: normal;
+    font-weight: 600;
     margin-top: 29px;
 }
 
 .main__image {
     position: absolute;
     right: 0;
-    width: 40%;
+    width: 35%;
     overflow: hidden;
     border-radius: 113px 0px 0px 113px;
     border: 2px solid #3B3B3B;
