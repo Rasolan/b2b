@@ -1,0 +1,30 @@
+.loading {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    gap: 40px 0;
+}
+
+.loadingSpirale {
+    transition: all 0.5s ease;
+    animation: rotate 3s linear infinite;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(-360deg);
+    }
+}
+
+@media (max-width: 768px) {
+	.loadingLogo{
+        width: 100px;
+        height: 100px;
+    }
+    .loadingSpirale{
+        width: 30px;
+        height: 30px;
+    }
+}

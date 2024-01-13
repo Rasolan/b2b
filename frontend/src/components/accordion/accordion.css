@@ -51,3 +51,15 @@
 .accordion__arrow-active {
     transform: rotate(180deg);
 }
+@media (max-width: 1200px) {
+	
+}
+@media (max-width: 992px) {	
+	
+}
+@media (max-width: 768px) {
+    .accordion__question{
+        font-size: 17px;
+    }
+	
+}

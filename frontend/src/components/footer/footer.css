@@ -42,3 +42,38 @@
 .footer__logo span{
     color: rgba(97, 97, 97, 0.81);
 }
+@media (max-width: 1200px) {
+	.footer__container{
+        max-width: 993px;
+    }
+}
+@media (max-width: 992px) {	
+}
+	
+@media (max-width: 768px) {
+    .footer__container{
+        flex-direction: column;
+    }
+    .footer__info{
+        flex: none;
+    }
+    .footer__rules{
+        display: flex;
+        flex-direction: column;
+    }
+    .footer{
+        height: 100%;
+        margin-bottom: 70px;
+    }
+    .footer__rules a{
+        font-size: 12px;
+    }
+    .footer__info{
+        font-size: 12px;
+    }
+    .footer__logo{
+        text-align: left;
+        font-size: 27px;
+        flex: none;
+    }
+}	

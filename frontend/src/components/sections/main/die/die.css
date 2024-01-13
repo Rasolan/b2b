@@ -14,12 +14,33 @@
 }
 
 .die__title {
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     font-size: 40px;
     font-weight: 700;
 }
 
 .die__subtitle {
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     font-size: 30px;
     font-weight: 700;
 }
 
+@media (max-width: 1200px) {
+	
+}
+@media (max-width: 992px) {	
+	
+}
+@media (max-width: 768px) {
+    .die__title{
+        font-size: 20px;
+        text-align: center;
+    }
+    .die__subtitle{
+        font-size: 16px;
+        text-align: center;
+    }
+    .die__container{
+        padding: 40px 0;
+    }
+}

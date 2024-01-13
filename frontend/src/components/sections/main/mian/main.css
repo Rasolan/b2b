@@ -90,3 +90,50 @@
     backdrop-filter: blur(88.80000305175781px);
 
 }
+
+
+@media (max-width: 1200px) {
+	.main__container{
+        max-width: 992px;
+    }
+}
+@media (max-width: 992px) {	
+
+}
+@media (max-width: 768px) {
+    .main{
+        margin: 0;
+    }
+    .main__container{
+        max-width: 100%;
+        flex-direction: column;
+    }
+    .main__image{
+        display: none;
+    }
+    .main__info{
+        width: 100%;
+    }
+    .main__title::after , .main__title::before{
+        display: none;
+    }
+    .main__title{
+        font-size: 32px;
+        text-align: center;
+    }
+    .main__subtitle{
+        display: none;
+    }
+    .main__link{
+        font-size: 10px;
+    }
+    .main__nav{
+        display: flex;
+        justify-content: center;
+        
+    }
+    .main__text{
+        display: none;
+    }
+	
+}

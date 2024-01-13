@@ -73,3 +73,30 @@
     font-size: 16px;
     font-weight: 700;
 }
+
+@media (max-width: 1200px) {
+	
+}
+@media (max-width: 992px) {	
+	
+}
+@media (max-width: 768px) {
+	.play__cards{
+        flex-direction: column;
+        gap: 33px 0;
+    }
+    .play__title{
+        font-size: 32px;
+        text-align: center;
+        margin: 12px 0;
+    }.play__text{
+        font-size: 17px;
+        text-align: center;
+    }
+    .play__card{
+        padding: 41px 27px;
+    }
+    .play__card-info{
+        padding-left: 27px;
+    }
+}

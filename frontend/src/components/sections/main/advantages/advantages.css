@@ -49,3 +49,48 @@
     font-weight: 700;
     line-height: 1.48;
 }
+@media (max-width: 1200px) {
+	
+}
+@media (max-width: 992px) {	
+	
+}
+@media (max-width: 768px) {
+    .advantages{
+        margin: 33px 0;
+    }
+	.advantages__container{
+        max-width: 100%;
+    }
+    .advantages__card{
+        flex-direction: column;
+    }
+    .advantages__cards{
+        flex-direction: column;
+    }
+    .advantages__info{
+        padding: 10px;
+    }
+    .advantages__image{
+        width: 300px;
+        height: 300px;
+    }
+    .advantages__tag{
+        font-size: 12px;
+    }
+    .advantages__tags{
+        margin-bottom: 10px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .advantages__title{
+        margin-bottom: 16px;
+        width: 100%;
+        font-size: 32px;
+        text-align: center;
+    }
+    .advantages__text{
+        font-size: 14px;
+    }
+}
