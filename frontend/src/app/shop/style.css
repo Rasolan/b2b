@@ -475,7 +475,32 @@
     .shop__card-button{
         font-size: 13px;
     }
-
+    .shop__ticket-title {
+        margin-left: 8px;
+        font-size: 13px;
+    }
+    .shop__ticket-buy .button{
+        font-size: 10px;
+        padding: 8px;
+    }
+    .shop__ticket{
+        padding: 15px;
+    }
+    .shop__ticket-icon img{
+        width: 29px;
+        height: 17px;
+        
+    }
+    .shop__ticket-icon{
+        border-radius: 8px;
+        padding: 9px;
+    }
+    .shop__ticket-buy .shop__ticket-info{
+        width: 35px;
+        height: 35px;
+        padding: 0;
+    }
+    
 
 
     
