@@ -85,7 +85,8 @@
     .header{
         width: 100%;
         position: fixed;
-        top: calc(100vh - 70px);
+        top: auto;
+        bottom: 0;
         backdrop-filter: none;
         background-color: rgba(31, 31, 31);
         border-top: 3px solid#EB9C00;
