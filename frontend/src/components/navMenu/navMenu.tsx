@@ -15,7 +15,7 @@ const NavMenu = () => {
             <div className='header__nav-menu'>
                 <Image onClick={() => { setMenuState(!menuSate) }} alt='user icon' src={User} className="header__user" />
                 <div className={menuSate ? "header__nav-card header__nav-card-active" : "header__nav-card"}>
-                    <ul>
+                    <ul onClick={() => { setMenuState(!menuSate) }}>
                         <li>
 
                             <Link href={'/account'}><Image height={27} width={27} src={LoginUser} alt={'login user'} />Личный кабинет</Link>
