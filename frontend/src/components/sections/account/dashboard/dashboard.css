@@ -120,3 +120,46 @@
 .dashboard__card-button{
     font-size: 16px;
 }
+
+
+@media (max-width: 768px) {
+    .dashboard__title-info h2{
+        font-size: 32px;
+    }
+    .dashboard__title-info h1{
+        font-size: 12px;
+    }
+    .account__dashboard{
+        padding: 27px 15px;
+        gap: 17px;
+        grid-template-columns: 1fr;
+    }
+    .dashboard__info{
+        flex-direction: column;
+        gap: 17px 0;
+    }
+    .dashboard__title-image{
+        height: 50px;
+        width: 50px;
+    }
+    .dashboard__profile{
+        flex-direction: row;
+    }
+    .profile__icon img{
+        width: 60px;
+        height: 60px;
+    }
+    .profile__nickname{
+        font-size: 15px;
+    }
+    .profile__button{
+        font-size: 13px;
+    }
+    .dashboard__card{
+        gap: 9px 0;
+        padding: 18px 17px;
+    }
+    .dashboard__card-button{
+        font-size: 13px;
+    }
+}

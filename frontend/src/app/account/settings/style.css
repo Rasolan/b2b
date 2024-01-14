@@ -38,3 +38,13 @@
     font-size: 16px;
     font-weight: 700;
 }
+
+@media (max-width: 768px) {
+    .account__settings{
+        grid-template-columns: 1fr;
+    }
+    .account__settings-card{
+        padding: 24px 14px;
+        gap: 9px 0;
+    }
+}

@@ -399,3 +399,84 @@
 .shop__ticket-buy .button {
     display: inline;
 }
+
+
+
+@media (max-width: 768px) {
+    .shop{
+        margin-top: 20px;
+    }
+    .shop__ad-title{
+        font-size: 32px;
+    }
+    .shop__ad-background{
+        padding: 34px 20px 24px 20px;
+        text-align: center;
+    }
+    .shop__ad-text{
+        font-size: 12px;
+        text-align: center;
+    }
+    .notReg__icon{
+        height: 30px;
+        width: 30px;
+    }
+    .shop__notReg{
+        margin-top: 33px;
+        padding: 15px 16px;
+        display: flex;
+        flex-direction: column;
+        gap: 7px 0;
+    }
+    .notReg__title{
+        font-size: 14px;
+    }
+    .notReg__text{
+        font-size: 12px;
+    }
+    .notReg__btn{
+        font-size: 12px;
+    }
+    .notReg__buttons{
+        justify-content: center;
+    }
+    .shop__content{
+        margin-top: 33px;
+        grid-template-columns: 1fr;
+        gap: 12px 0;
+    }
+    .shop__cards{
+        gap: 17px 0;
+        grid-template-columns: 1fr;
+    }
+    .shop__card{
+        margin: 0 30px;
+        height: 450px;
+    }
+    .shop__card-icon{
+        height: 180px;
+    }
+    .shop__sidebar-header p{
+        padding: 17px 34px;
+        font-size: 27px;
+    }
+    .shop__sidebar-content{
+        padding: 17px 13px;
+    }
+    .shop__sidebar-nav{
+        gap: 5px 0;
+    }
+    .shop__sidebar-footer div{
+        padding: 7px;
+    }
+    .shop__card-title{
+        font-size: 27px;
+    }
+    .shop__card-button{
+        font-size: 13px;
+    }
+
+
+
+    
+}

@@ -67,3 +67,18 @@
     display: flex;
     border-bottom: 1px solid rgba(255, 255, 255, 0.5);
 }
+
+@media (max-width: 768px) {
+    .account__sidebar-title{
+        padding: 16px 18px 10px 30px;
+    }
+    .account__sidebar-category{
+        padding: 17px 15px;
+    }
+    .account__buy-card{
+        padding: 29px;
+    }
+	.account__sidebar-nav{
+        padding: 8px 0;
+    }
+}

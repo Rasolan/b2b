@@ -5,6 +5,7 @@
 .reg__window {
     overflow: hidden;
     display: flex;
+    height: 700px;
     position: relative;
     align-items: center;
     justify-content: end;
@@ -42,4 +43,17 @@
 .form__button{
     font-size: 18px;
     font-weight: 700;
+}
+
+
+@media (max-width: 768px) {
+    .reg__window{
+        margin: 22px 0 29px 0;
+    }
+    .reg__form{
+        padding: 21px 17px;
+    }
+    .form__button{
+        font-size: 13px;
+    }
 }

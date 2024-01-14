@@ -21,15 +21,7 @@ const Reg = () => {
                     <MainSlider imgs={images}></MainSlider>
                     <div className="reg__form">
                         <FormHeader/>
-                        <Input placeholder="Введите логин" type="text" className="form__input"></Input>
-                        <Input placeholder="Введите ник Minecraft" type="text" className="form__input"></Input>
-                        <Input placeholder="Введите пароль" type="text" className="form__input"></Input>
-                        <Input placeholder="Подтвердите пароль" type="text" className="form__input"></Input>
-                        <div className="capchs">Google capcha when back-end</div>
-                        <div className="form__line"></div>
                         <ButtonDiscord></ButtonDiscord>
-                        <div className="form__line"></div>
-                        <Link href={'/reg'} className="button form__button">Создать аккаунт</Link>
                     </div>
                 </div>
             </div>

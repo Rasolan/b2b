@@ -68,3 +68,24 @@
     font-size: 24px;
     font-weight: 700;
 }
+
+
+@media (max-width: 768px) {
+    .account__buy-card{
+        padding: 29px 18px;
+    }
+    .account__buy-title{
+        font-size: 17px;
+    }
+    .account__buy-icon{
+        height: 65px;
+        width: 65px;
+    }
+    .account__buy-info{
+        gap: 0 17px;
+    }
+    .account__buy-subtitle{
+        font-size: 15px;
+    }
+	
+}

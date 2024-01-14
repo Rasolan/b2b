@@ -44,3 +44,14 @@
     border: 0px solid  #3B3B3B;
     background: rgb(194, 218, 255, 0.16);
 }
+
+
+@media (max-width: 768px) {
+    .login__form{
+        padding: 24px 17px;
+    }
+    .login{
+        background-size: cover;
+        height: calc(100vh - 55px - 70px);
+    }
+}
