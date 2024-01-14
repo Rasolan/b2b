@@ -3,11 +3,10 @@
     top: 0;
     z-index: 10;
     padding-top: 10px;
-    background-color: rgba(31, 31, 31, 0.54);
+    background-color: rgb(31, 31, 31);
     border-bottom: 1px solid #696969;
     height: 70px;
     display: flex;
-    backdrop-filter: blur(21.5px);
 }
 
 .header__container {

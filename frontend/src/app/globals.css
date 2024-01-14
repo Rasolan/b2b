@@ -111,3 +111,28 @@ html {
   padding: 8px 20px;
   display: inline-block;
 }
+
+/* ===== Scrollbar CSS ===== */
+  /* Firefox */
+  * {
+    scrollbar-width: auto;
+    scrollbar-color: #005AE0 #323232;
+  }
+
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 14px;
+  }
+
+  *::-webkit-scrollbar-track {
+    border-radius: 15px;
+    margin: 75px 0;
+    background: #323232;
+    border: 3px solid #252525;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: #005AE0;
+    border-radius: 15px;
+    border: 3px solid #323232;
+  }
