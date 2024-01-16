@@ -1,6 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
 import MainCard from "$/public/images/mainCards/1.png"
+import MainCard2 from "$/public/images/mainCards/2.png"
 import "./advantages.css"
 const advantages = () => {
     return (
@@ -8,7 +9,7 @@ const advantages = () => {
             <div className="container advantages__container">
                 <div className="advantages__cards">
                     <div className="advantages__card">
-                        <Image width={500} height={500} className="advantages__image" src={MainCard} alt={'card image'}></Image>
+                        <Image width={500} height={500} className="advantages__image" src={MainCard2} alt={'card image'}></Image>
                         <div className="advantages__info">
                             <div className="advantages__tags">
                                 <div className="tag advantages__tag">Оптимизация</div>

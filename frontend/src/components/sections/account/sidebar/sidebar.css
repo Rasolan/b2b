@@ -62,12 +62,24 @@
 }
 .subcategory-active{
     background: var(--colors-blue-800, #004BBD);
+    position: relative;
 }
 .navLink-active + .account__sidebar-subcategory{
     display: flex;
     border-bottom: 1px solid rgba(255, 255, 255, 0.5);
 }
-
+.subcategory-active::after{
+    content: "";
+    position: absolute;
+    background-image: url('../../../../../public/svg/arrowRigth.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 16px;
+    height: 13px;
+    z-index: 90;
+    right: 20px;
+}
 @media (max-width: 768px) {
     .account__sidebar-title{
         padding: 16px 18px 10px 30px;

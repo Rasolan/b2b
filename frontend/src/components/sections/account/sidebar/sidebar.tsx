@@ -6,6 +6,7 @@ import Pocket from '$/public/svg/pocket.svg'
 import ShopingCart from '$/public/svg/shopingCart.svg'
 import TimePast from '$/public/svg/timePast.svg'
 import Setting from '$/public/svg/setting.svg'
+
 import './sidebar.css'
 const sidebar = () => {
     return (

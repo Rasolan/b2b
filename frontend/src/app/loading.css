@@ -4,12 +4,18 @@
     flex-direction: column;
     justify-content: center;
     height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+    left: 0;
+    top: 0;
     gap: 40px 0;
+    background: #1A1A1A;
 }
 
 .loadingSpirale {
     transition: all 0.5s ease;
-    animation: rotate 3s linear infinite;
+    animation: rotate 1.5s linear infinite;
 }
 
 @keyframes rotate {

@@ -60,7 +60,7 @@
     font-size: 20px;
     font-weight: 600;
     line-height: 1.48;
-    color: var(--colors-neutral-500, #808080);
+    color: var(--colors-neutral-500, #ADADAD);
 }
 
 @media (max-width: 1200px) {

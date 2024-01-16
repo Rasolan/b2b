@@ -1,5 +1,5 @@
 .advantages {
-    margin: 65px 0;
+    margin: 81px 0;
 }
 
 .advantages__container {
@@ -11,7 +11,7 @@
     margin: 0 auto;
     display: flex;
     flex-direction: column;
-    gap: 50px 0;
+    gap: 53px 0;
 }
 
 .advantages__card {
@@ -27,7 +27,8 @@
     justify-content: center;
     flex-direction: column;
     padding-right: 100px;
-    padding-left: 17px;
+    padding-left: 20px;
+    min-width: 50%;
 }
 
 .advantages__tags {
@@ -49,11 +50,17 @@
     font-weight: 700;
     line-height: 1.48;
 }
+.advantages__image{
+    min-width: 50%;
+}
 @media (max-width: 1200px) {
 	
 }
 @media (max-width: 992px) {	
-	
+	/* .advantages__image{
+        width: 400px;
+        height: 400px;
+    } */
 }
 @media (max-width: 768px) {
     .advantages{

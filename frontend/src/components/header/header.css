@@ -64,11 +64,13 @@
 
 @media (max-width: 1200px) {
 	.header__container{
-        max-width: 993px;
+        min-width: 991px;
     }
 }
 @media (max-width: 992px) {	
-	
+	.header__container{
+        min-width: 767px;
+    }
 }
 @media (max-width: 768px) {
     .header-mobile{

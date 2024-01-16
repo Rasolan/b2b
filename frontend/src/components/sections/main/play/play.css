@@ -27,11 +27,12 @@
     width: 100%;
     display: flex;
     gap: 0 48px;
+    justify-content: center;
 }
 
 .play__card {
     padding: 48px;
-    flex: 0 0 50%;
+    max-width: 50%;
     border-radius: 30px;
     border: 2px solid #3B3B3B;
     background: #242424;
@@ -84,6 +85,8 @@
 	.play__cards{
         flex-direction: column;
         gap: 33px 0;
+        justify-content: center;
+        align-items: center;
     }
     .play__title{
         font-size: 32px;
@@ -94,6 +97,7 @@
         text-align: center;
     }
     .play__card{
+        max-width: 100%;
         padding: 41px 27px;
     }
     .play__card-info{

@@ -25,20 +25,20 @@
     line-height: 1.54;
     color: #DBDBDB;
     padding: 27px 0px;
-    transition: 0.3s ease;
+    transition: 0.3s ease-in-out;
 }
 
 .accordion__answer-open {
     opacity: 1;
     height: auto;
-    display: block;
+    transform: scaleY(1);
 }
 
 .accordion__answer-close {
     opacity: 0;
     padding: 0;
     height: 0;
-    display: none;
+    transform: scaleY(0);
 }
 
 .accordion__arrow {

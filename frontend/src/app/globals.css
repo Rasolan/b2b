@@ -12,6 +12,7 @@ html {
   color: white;
 }
 .container {
+  padding: 0 12px;
   height: 100%;
   margin: 0 auto;
 }
@@ -106,8 +107,8 @@ html {
   text-align: center;
   font-size: 16px;
   font-weight: 700;
-  border-radius: 8px;
-  background: var(--colors-blue-800, #004BBD);
+  border-radius: 2px;
+  background: var(--colors-blue-500, #257CFF);
   padding: 8px 20px;
   display: inline-block;
 }
