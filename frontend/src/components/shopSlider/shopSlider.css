@@ -1,0 +1,50 @@
+.backgroundImage{
+    width: 100%;
+    height: 100%;
+}
+.swiper{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+.swiperSlider img{
+    width: 100%;
+    height: 100%;
+}
+.reg .swiper-pagination{
+    text-align-last: left;
+    padding: 0 0 0 100px;
+}
+.swiper-pagination-bullet{
+    background: white;
+    opacity: 0.27;
+    width: 12px;
+    height: 12px;
+}
+.swiper-pagination-bullet-active{
+    opacity: 1;
+}
+.swiperSlider{
+    position: relative;
+}
+.swiperSlider p{
+    transform: translateY(-50%);
+    top: 50%;
+    left: 58px;
+    position: absolute;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.18;
+}
+.mainSwipe::after{
+    content: '';
+    width: 50px;
+    height: 50px;
+    background-color: #7c7c7cba;
+    top: 0;
+    right: 0;
+    position: absolute;
+}

@@ -11,27 +11,29 @@ html {
   background-color: var(--gray);
   color: white;
 }
+
 .container {
   padding: 0 12px;
   height: 100%;
   margin: 0 auto;
 }
-@media (max-width: 1200px) {
-	
-}
-@media (max-width: 992px) {	
-	
-}
+
+@media (max-width: 1200px) {}
+
+@media (max-width: 992px) {}
+
 @media (max-width: 768px) {
-	.container{
+  .container {
     padding: 12px;
   }
-  html{
+
+  html {
     overflow-x: hidden;
   }
 }
 
-.button {
+.button,
+.button-yellow {
   cursor: pointer;
   display: inline-block;
   width: fit-content;
@@ -45,9 +47,17 @@ html {
   font-weight: 700;
 }
 
+.button-yellow {
+  background-color: #C80;
+}
+
 .button:hover {
 
   background-color: #004BBD;
+}
+
+.button-yellow:hover {
+  background-color: #FFAF14;
 }
 
 .button:active {
@@ -55,7 +65,17 @@ html {
   color: #004BBD;
   background-color: #ffffff;
 }
-.button-white{
+
+.button-yellow:active {
+  background-color: #FFC552;
+}
+
+.button-yellow:focus {
+  border: 3px solid #9D6800;
+  background: var(--colors-yellow-700, #C80);
+}
+
+.button-white {
   font-size: 24px;
   font-weight: 700;
   color: #004BBD;
@@ -67,9 +87,11 @@ html {
   border: 2px solid transparent;
   transition: 0.4s ease;
 }
-.button-white:hover{
+
+.button-white:hover {
   background-color: #d4d4d4;
 }
+
 .button:focus {
   background-color: #257CFF;
   border-color: #FFAF14;
@@ -114,25 +136,25 @@ html {
 }
 
 /* ===== Scrollbar CSS ===== */
-  /* Firefox */
-  * {
-    scrollbar-width: auto;
-    scrollbar-color: #005AE0 #323232;
-  }
+/* Firefox */
+* {
+  scrollbar-width: auto;
+  scrollbar-color: #005AE0 #323232;
+}
 
-  /* Chrome, Edge, and Safari */
-  *::-webkit-scrollbar {
-    width: 14px;
-  }
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 14px;
+}
 
-  *::-webkit-scrollbar-track {
-    border-radius: 15px;
-    background: #323232;
-    border: 3px solid #252525;
-  }
+*::-webkit-scrollbar-track {
+  border-radius: 15px;
+  background: #323232;
+  border: 3px solid #252525;
+}
 
-  *::-webkit-scrollbar-thumb {
-    background-color: #005AE0;
-    border-radius: 15px;
-    border: 3px solid #323232;
-  }
+*::-webkit-scrollbar-thumb {
+  background-color: #005AE0;
+  border-radius: 15px;
+  border: 3px solid #323232;
+}

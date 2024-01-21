@@ -35,7 +35,7 @@ const dashboard = () => {
                         <Image height={81} width={81} src={Skin} alt={'skin'}></Image>
                     </div>
                     <div className="profile__nickname">Rasolan</div>
-                    <div className="button profile__button">Игрок</div>
+                    <div className="tag profile__button">Игрок</div>
                 </div>
             </div>
         </div>

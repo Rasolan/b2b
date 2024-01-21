@@ -8,6 +8,8 @@
 }
 
 .shop__ad-background {
+    overflow: hidden;
+    height: 299px;
     position: relative;
     border-radius: 32px 32px 0px 0px;
     border: 2px solid #3B3B3B;
@@ -223,7 +225,8 @@
     gap: 0 8px;
     transition: 0.2s ease-in;
 }
-.shop__sidebar-link:hover{
+
+.shop__sidebar-link:hover {
     border: 2px solid var(--colors-neutral-800, #3B3B3B)
 }
 
@@ -257,11 +260,17 @@
 
 }
 
+.shop__card:hover .shop__card-blur {
+    background: rgba(88, 88, 88, 0.54);
+}
+
 .shop__card-blur {
+    transition: 0.3s ease-in-out;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
+    background: rgba(43, 43, 43, 0.54);
     backdrop-filter: blur(80px);
     position: absolute;
     z-index: 1;
@@ -292,15 +301,18 @@
     justify-content: center;
     gap: 0 4px;
 }
+
 .shop__card-info {
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 5px 5px;
 }
-.shop__card-button{
+
+.shop__card-button {
     font-size: 20px;
 }
+
 .shop__pagination {
     margin-top: 75px;
     display: none;
@@ -363,15 +375,18 @@
     font-weight: 700;
     flex: 1 1 auto;
 }
-.shop__ticket-buy{
+
+.shop__ticket-buy {
     display: flex;
     align-items: center;
     gap: 0 4px;
 }
-.shop__ticket-buy .button{
+
+.shop__ticket-buy .button {
     font-size: 20px;
 }
-.shop__ticket-info{
+
+.shop__ticket-info {
     padding: 0 4px;
 
 }
@@ -391,117 +406,175 @@
 }
 
 .shop__ticket-yellow {
-    background: linear-gradient(90deg, rgba(203,139,4,0.15) 0%, rgba(203,139,4,0.3) 10%, rgba(43,43,43,0.54) 45%);
+    background: linear-gradient(90deg, rgba(203, 139, 4, 0.15) 0%, rgba(203, 139, 4, 0.3) 10%, rgba(43, 43, 43, 0.54) 45%);
 }
-.shop__ticket-blue{
-    background: linear-gradient(90deg, rgba(4,92,227,0.15) 0%, rgba(4,92,227,0.3) 10%, rgba(43,43,43,0.54) 45%);
+
+.shop__ticket-blue {
+    background: linear-gradient(90deg, rgba(4, 92, 227, 0.15) 0%, rgba(4, 92, 227, 0.3) 10%, rgba(43, 43, 43, 0.54) 45%);
 }
+
 .shop__ticket-buy .button {
     display: inline;
+}
+.shop-mobileCategory-title{
+    border-radius: 32px 32px 5px 5px;
+    background: #252525;
+    border-bottom: 1px solid white;
+    padding: 26px 12px;
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 20px;
+
+}
+.shop-mobileCategory-title , .categorySlider{
+    display: none;
 }
 
 
 
 @media (max-width: 768px) {
-    .shop{
+    .shop-mobileCategory-title , .categorySlider{
+        display: block;
+        position: sticky;
+        top: 0;
+    }
+    .shop__sidebar{
+        display: none;
+    }
+    .shop {
         margin-top: 20px;
     }
-    .shop__ad-title{
+
+    .swiperSlider p {
+        text-align: left;
+        left: 12px;
         font-size: 32px;
     }
-    .shop__ad-background{
+
+    .shop__ad-background {
         padding: 34px 20px 24px 20px;
         text-align: center;
     }
-    .shop__ad-text{
+
+    .shop__ad-text {
         font-size: 12px;
         text-align: center;
     }
-    .notReg__icon{
+
+    .notReg__icon {
         height: 30px;
         width: 30px;
     }
-    .shop__notReg{
+
+    .shop__notReg {
         margin-top: 33px;
         padding: 15px 16px;
         display: flex;
         flex-direction: column;
         gap: 7px 0;
     }
-    .notReg__title{
+
+    .notReg__title {
         font-size: 14px;
     }
-    .notReg__text{
+
+    .notReg__text {
         font-size: 12px;
     }
-    .notReg__btn{
+
+    .notReg__btn {
         font-size: 12px;
     }
-    .notReg__buttons{
+
+    .notReg__buttons {
         justify-content: center;
     }
-    .shop__content{
+
+    .shop__content {
         margin-top: 33px;
         grid-template-columns: 1fr;
         gap: 12px 0;
     }
-    .shop__cards{
+
+    .shop__cards {
+        height: 500px;
+        overflow-y: scroll;
         gap: 17px 0;
         grid-template-columns: 1fr;
     }
-    .shop__card{
+
+    .shop__card {
         margin: 0 30px;
         height: 450px;
     }
-    .shop__card-icon{
+
+    .shop__card-icon {
         height: 180px;
     }
-    .shop__sidebar-header p{
+
+    .shop__sidebar-header p {
         padding: 17px 34px;
         font-size: 27px;
     }
-    .shop__sidebar-content{
+
+    .shop__sidebar-content {
         padding: 17px 13px;
     }
-    .shop__sidebar-nav{
+
+    .shop__sidebar-nav {
         gap: 5px 0;
     }
-    .shop__sidebar-footer div{
+
+    .shop__sidebar-footer div {
         padding: 7px;
     }
-    .shop__card-title{
+
+    .shop__card-title {
         font-size: 27px;
     }
-    .shop__card-button{
+
+    .shop__card-button {
         font-size: 13px;
     }
+
     .shop__ticket-title {
         margin-left: 8px;
         font-size: 13px;
     }
-    .shop__ticket-buy .button{
+
+    .shop__ticket-buy .button {
         font-size: 10px;
         padding: 8px;
     }
-    .shop__ticket{
+
+    .shop__ticket {
         padding: 15px;
     }
-    .shop__ticket-icon img{
+
+    .shop__ticket-icon img {
         width: 29px;
         height: 17px;
-        
+
     }
-    .shop__ticket-icon{
+
+    .shop__ticket-icon {
         border-radius: 8px;
         padding: 9px;
     }
-    .shop__ticket-buy .shop__ticket-info{
+
+    .shop__ticket-buy .shop__ticket-info {
         width: 35px;
         height: 35px;
         padding: 0;
     }
+
+    .category-btn {
+        font-size: 15px;
+        font-weight: 700;
+    }
     
 
 
-    
+
+
 }

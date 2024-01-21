@@ -112,9 +112,10 @@
 }
 
 .profile__button {
+    border-radius: 3.8px;
+    background: var(--colors-blue-800, #004BBD);
     font-size: 16px;
     font-weight: 700;
-    border-radius: 8px;
     padding: 1px 20px;
 }
 .dashboard__card-button{
@@ -123,11 +124,15 @@
 
 
 @media (max-width: 768px) {
+    .dashboard__title-info{
+        padding-top: 8px;
+    }
     .dashboard__title-info h2{
         font-size: 32px;
     }
     .dashboard__title-info h1{
         font-size: 12px;
+
     }
     .account__dashboard{
         padding: 27px 15px;

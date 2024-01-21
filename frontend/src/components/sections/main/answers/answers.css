@@ -5,7 +5,7 @@
 .answer__container {
     max-width: 1050px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .answers__info,
