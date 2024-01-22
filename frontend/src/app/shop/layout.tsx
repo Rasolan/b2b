@@ -4,19 +4,24 @@ import Image from 'next/image'
 import ShopSlider from '@/components/shopSlider/shopSlider'
 import ShopMobileCategory from '@/components/shopMobileCategore/shopMobileCategory'
 import Key from "$/public/svg/key.svg"
-import Star from "$/public/svg/star.svg"
-import Market from "$/public/svg/market.svg"
-import Ball from "$/public/svg/ball.svg"
-import Bag from "$/public/svg/bag.svg"
-import Carrot from "$/public/svg/carrot.svg"
-import Particles from "$/public/svg/particles.svg"
-import Dollar from "$/public/svg/dollar.svg"
+import StarSvg from "@/components/svgs/star"
+
+// import {ReactComponent as marketSvg} from "$/public/svg/market.svg"
+import MarketSvg from "@/components/svgs/market"
+import BallSvg from "@/components/svgs/ball"
+import Close from '$/public/svg/close.svg'
+import BagSvg from "@/components/svgs/bag"
+import CarrotSvg from "@/components/svgs/carrot"
+import ParticlesSvg from "@/components/svgs/particles"
+import DollarSvg from "@/components/svgs/dollar"
+import MagicSvg from "@/components/svgs/magic"
 import Info from "$/public/svg/info.svg"
 import ArrowPagination from "$/public/svg/arrowPagination.svg"
 import "./style.css"
 import Link from 'next/link'
 import TicketYellow from '$/public/images/ticketYellow.png'
 import TicketBlue from '$/public/images/ticketBlue.png'
+import NavLink from '@/components/navLink/navLink';
 const images = [
     { "url": "/shopSlider/1.png" },
     { "url": "/shopSlider/1.png" },
@@ -74,9 +79,32 @@ const page = () => {
     const pagePrev = () => currentPage > 1 ? setCurrentPage(currentPage - 1) : currentPage
 
 
+    const [notAutMenuSate, setnotAutMenuState] = useState(false);
+
+
     return (
         <section className='shop'>
             <div className="container shop__container">
+                <div>
+                    <div onClick={() => { setnotAutMenuState(!notAutMenuSate) }} className={notAutMenuSate ? "notAutMobile__Wrapper notAutMobile__Wrapper-active" : "notAutMobile__Wrapper"}></div>
+                    <div className='notAutMobile'>
+                        <div className={notAutMenuSate ? "notAutMobile-card notAutMobile-card-active" : "notAutMobile-card"}>
+                            <div className="notAutMobile-card-header">
+                                <div className="notAutMobile-card-logo">
+                                    <Image src={Key} alt={'login user blue'}></Image>
+                                    <div className="notAutMobile-card-logo-info">
+                                        <p className="notAutMobile-card-logo-title">Вы не авторизованы</p>
+                                    </div>
+                                </div>
+                                <div onClick={() => { setnotAutMenuState(!notAutMenuSate) }} className="notAutMobile-card-close"><Image src={Close} alt={'close btn'}></Image></div>
+                            </div>
+                            <div className="poppup-info">
+                                Авторизируйтесь, чтобы купить товар и получить доступ к полному функционалу сайта
+                            </div>
+                            <Link href={'/login'} className='button'>Авторизиризоваться</Link>
+                        </div>
+                    </div>
+                </div>
                 <div className="shop__ad">
                     <div className="shop__ad-background">
                         <ShopSlider imgs={images} text={"t"}></ShopSlider>
@@ -96,31 +124,34 @@ const page = () => {
                     </div>
                 </div>
                 <div className="shop__content">
-                        <div className="shop-mobileCategory-title">Категории товаров</div>
-                        <ShopMobileCategory></ShopMobileCategory>
+                    <div className="shop-mobileCategory-title">Категории товаров</div>
+                    <ShopMobileCategory></ShopMobileCategory>
                     <div className={shopCategory === "cosmetics" ? 'shop__sidebar shop__sidebar-cosmetics' : 'shop__sidebar'}>
                         <div className="shop__sidebar-header"><p>Категории</p></div>
                         <div className="shop__sidebar-content">
-                            <div onClick={() => setShopCategory('cosmetics')} className={shopCategory === "cosmetics" ? 'shop__sidebar-title shop__sidebar-title-active' : 'shop__sidebar-title'}><Image src={Star} alt={'star'} />Косметика</div>
+                            <div onClick={() => setShopCategory('cosmetics')} className={shopCategory === "cosmetics" ? 'shop__sidebar-title shop__sidebar-title-active' : 'shop__sidebar-title'}> <StarSvg />Косметика</div>
                             <ul className='shop__sidebar-nav'>
                                 <li>
-                                    <Link className="shop__sidebar-link" href={''}><Image src={Market} alt={'market'} />Набор косметики</Link>
+                                    <NavLink activeClass=' shop__sidebar-link-active' exact className="shop__sidebar-link" href={'/shop/pack'}><MarketSvg />Набор косметики</NavLink>
                                 </li>
                                 <li>
-                                    <Link className="shop__sidebar-link" href={''}><Image src={Ball} alt={'ball'} />Спорт</Link>
+                                    <NavLink activeClass=' shop__sidebar-link-active' exact className="shop__sidebar-link" href={'/shop/sport'}><BallSvg />Спорт</NavLink>
                                 </li>
                                 <li>
-                                    <Link className="shop__sidebar-link" href={''}><Image src={Bag} alt={'bag'} />Рюкзак</Link>
+                                    <NavLink activeClass=' shop__sidebar-link-active' exact className="shop__sidebar-link" href={'/shop/bag'}><BagSvg />Рюкзак</NavLink>
                                 </li>
                                 <li>
-                                    <Link className="shop__sidebar-link" href={''}><Image src={Carrot} alt={'carrot'} />Питомцы</Link>
+                                    <NavLink activeClass=' shop__sidebar-link-active' exact className="shop__sidebar-link" href={'/shop/pets'}><CarrotSvg />Питомцы</NavLink>
                                 </li>
                                 <li>
-                                    <Link className="shop__sidebar-link" href={''}><Image src={Particles} alt={'particles'} />Частицы</Link>
+                                    <NavLink activeClass=' shop__sidebar-link-active' exact className="shop__sidebar-link" href={'/shop/particles'}><ParticlesSvg />Частицы</NavLink>
                                 </li>
                             </ul>
                         </div>
-                        <div onClick={() => setShopCategory('ticket')} className={shopCategory === "ticket" ? 'shop__sidebar-footer shop__sidebar-footer-active' : 'shop__sidebar-footer'}><div><Image src={Dollar} alt={'dollar'}></Image>Проходка на сервер</div></div>
+                        <div className={shopCategory === "ticket" ? 'shop__sidebar-footer shop__sidebar-footer-active' : 'shop__sidebar-footer'}>
+                            <div className='shop__sidebar-footer-skin'><MagicSvg />Скины на предметы</div>
+                            <div className='shop__sidebar-footer-ticket' onClick={() => setShopCategory('ticket')}><DollarSvg />Проходка на сервер</div>
+                        </div>
                     </div>
                     <div className="shop__market">
                         <div className="shop__tickets">
@@ -152,7 +183,7 @@ const page = () => {
                                     </div>
                                     <div className="shop__card-title">{item.title}</div>
                                     <div className="shop__card-buy">
-                                        <div className="button-yellow shop__card-button">Купить {item.sale}₽</div>
+                                        <div onClick={() => { setnotAutMenuState(!notAutMenuSate) }} className="button-yellow shop__card-button">Купить {item.sale}₽</div>
                                     </div>
                                 </div>
                             ))}

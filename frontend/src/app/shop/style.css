@@ -1,580 +1,730 @@
-.shop {
-    margin-top: 45px;
-    margin-bottom: 70px;
-}
-
-.shop__container {
-    max-width: 1300px;
-}
-
-.shop__ad-background {
-    overflow: hidden;
-    height: 299px;
-    position: relative;
-    border-radius: 32px 32px 0px 0px;
-    border: 2px solid #3B3B3B;
-    border-bottom: none;
-    padding: 100px 200px 100px 58px;
-}
-
-.shop__ad-title {
-    font-size: 36px;
-    font-weight: 700;
-    line-height: 1.18;
-
-}
-
-.shop__ad-text {
-    text-align: center;
-    padding: 26px 10px;
-    font-family: 'Poppins', sans-serif;
-    font-size: 24px;
-    font-weight: 900;
-    line-height: 1.04;
-    border-radius: 0px 0px 32px 32px;
-    background: #C80;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-}
-
-.swiper-pagination {
-    text-align-last: right;
-    padding: 0 20px 0 0px;
-}
-
-.shop .swiper-pagination-horizontal {
-    position: absolute;
-    top: 20px !important;
-    right: 0;
-}
-
-/* ========================================================================================== */
-.shop__notReg {
-    margin-top: 53px;
-    display: flex;
-    padding: 37px 54px;
-    border-radius: 32px;
-    border: 2px solid #3B3B3B;
-    background: rgba(36, 36, 36, 0.53);
-}
-
-.notReg__info {
-    margin-left: 20px;
-    flex: 0 0 50%;
-}
-
-.notReg__title {
-    font-size: 20px;
-    font-weight: 700;
-}
-
-.notReg__text {
-    font-family: "Poppins", sans-serif;
-    font-size: 16px;
-    font-weight: 700;
-    line-height: 1.48;
-
-}
-
-.notReg__btn {
-    height: fit-content;
-    font-size: 16px;
-}
-
-.notReg__buttons {
-    flex: 1 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: end;
-    gap: 0 20px;
-}
-
-/* ========================================================================== */
-.shop__content {
-    margin-top: 52px;
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    gap: 0 37px;
-    grid-template-rows: 1fr;
-
-}
-
-.shop__cards {
-    align-self: start;
-    gap: 37px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
-
-.shop__card {
-    position: relative;
-    background-position: center center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    overflow: hidden;
-    height: 748px;
-    border-radius: 32px;
-    border: 2px solid #525252;
-    background: rgba(43, 43, 43, 0.54);
-    display: flex;
-    align-items: center;
-    padding: 40px 0;
-    justify-content: space-between;
-    flex-direction: column;
-}
-
-
-.shop__sidebar {
-    align-self: start;
-    border-radius: 32px;
-    background: #242424;
-}
-
-.shop__sidebar-header {
-    border-bottom: 1px solid #525252;
-}
-
-.shop__sidebar-footer {
-    border-top: 1px solid #525252;
-    padding: 22px 26px;
-}
-
-.shop__sidebar-footer div {
-    cursor: pointer;
-    border-radius: 20px;
-    padding: 30px 26px;
-    color: #9C9C9C;
-    font-family: 'Poppins', sans-serif;
-    font-size: 15px;
-    border: 2px solid transparent;
-    font-weight: 900;
-    display: flex;
-    align-items: center;
-    gap: 0 7px;
-}
-
-.shop__sidebar-header p {
-    padding: 30px 26px;
-    font-size: 32px;
-    font-weight: 700;
-}
-
-.shop__sidebar-content {
-    padding: 40px 20px;
-    font-family: "Poppins", sans-serif;
-}
-
-.shop__sidebar-title {
-    cursor: pointer;
-    fill: #9C9C9C;
-    color: #9C9C9C;
-    font-family: "Poppins", sans-serif;
-    font-size: 15px;
-    font-weight: 900;
-    border-radius: 20px;
-    border: 2px solid transparent;
-    padding: 0 26px;
-    display: flex;
-    align-items: center;
-    gap: 0 15px;
-}
-
-.shop__sidebar-title-active {
-    padding: 22px 26px;
-}
-
-.shop__sidebar-title-active,
-.shop__sidebar-footer-active div {
-    fill: white;
-    color: white;
-    border: 2px solid #004BBD;
-    background: #005AE0;
-}
-
-.shop__sidebar-footer-active div img {
-    fill: white;
-}
-
-.shop__sidebar-title-active+.shop__sidebar-nav {
-    display: flex;
-}
-
-.shop__sidebar-title img {
-    margin-top: -4px;
-}
-
-
-.shop__sidebar-nav {
-    list-style: none;
-    padding: 30px 10px 0 10px;
-    display: none;
-    margin: 0;
-    flex-direction: column;
-    gap: 10px 0;
-}
-
-.shop__sidebar-link {
-    border: 2px solid transparent;
-    border-radius: 31px;
-    padding: 14px 16px;
-    font-family: 'Poppins', sans-serif;
-    font-size: 11px;
-    font-weight: 900;
-    color: rgba(234, 234, 234, 0.35);
-    display: flex;
-    align-items: center;
-    gap: 0 8px;
-    transition: 0.2s ease-in;
-}
-
-.shop__sidebar-link:hover {
-    border: 2px solid var(--colors-neutral-800, #3B3B3B)
-}
-
-
-
-
-.shop__tickets {
-    display: flex;
-}
-
-.shop__sidebar-cosmetics+.shop__market .shop__tickets {
-    display: none;
-}
-
-.shop__cards {
-    display: none;
-}
-
-.shop__sidebar-cosmetics+.shop__market .shop__cards {
-    display: grid;
-}
-
-.shop__sidebar-cosmetics+.shop__market .shop__pagination {
-    display: flex;
-}
-
-.shop__card-image {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-}
-
-.shop__card:hover .shop__card-blur {
-    background: rgba(88, 88, 88, 0.54);
-}
-
-.shop__card-blur {
-    transition: 0.3s ease-in-out;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(43, 43, 43, 0.54);
-    backdrop-filter: blur(80px);
-    position: absolute;
-    z-index: 1;
-}
-
-.shop__card-icon {
-    height: 407px;
-}
-
-.shop__card-image,
-.shop__card-title,
-.shop__card-buy {
-    position: relative;
-    z-index: 2;
-}
-
-.shop__card-title {
-    margin-top: 41px;
-    margin-bottom: 29px;
-    text-align: center;
-    font-size: 32px;
-    font-weight: 700;
-}
-
-.shop__card-buy {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 0 4px;
-}
-
-.shop__card-info {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 5px 5px;
-}
-
-.shop__card-button {
-    font-size: 20px;
-}
-
-.shop__pagination {
-    margin-top: 75px;
-    display: none;
-    align-items: center;
-    justify-content: center;
-    gap: 0 17px;
-
-}
-
-.shop__pagination p {
-    cursor: pointer;
-    font-family: 'Poppins', sans-serif;
-    font-size: 20px;
-    font-weight: 700;
-    padding: 7px 24px;
-    border-radius: 12px;
-    background: #232323;
-}
-
-.shop__pagination p.active {
-    background: #257BFB;
-    color: #3B3B3B;
-    box-shadow: 0px 6px 36px 0px rgba(37, 123, 251, 0.09);
-}
-
-.arrowPagination {
-    cursor: pointer;
-    margin: 0 30px;
-}
-
-.arrowPagination-left {
-    transform: rotate(-180deg);
-}
-
-
-
-
-
-
-
-
-
-.shop__tickets {
-    border-radius: 32px;
-    overflow: hidden;
-    flex-direction: column;
-    background: rgba(43, 43, 43, 0.54);
-
-}
-
-.shop__ticket {
-    display: flex;
-    padding: 62px 44px;
-    align-items: center;
-}
-
-.shop__ticket-title {
-    margin-left: 27px;
-    font-size: 32px;
-    font-weight: 700;
-    flex: 1 1 auto;
-}
-
-.shop__ticket-buy {
-    display: flex;
-    align-items: center;
-    gap: 0 4px;
-}
-
-.shop__ticket-buy .button {
-    font-size: 20px;
-}
-
-.shop__ticket-info {
-    padding: 0 4px;
-
-}
-
-.shop__ticket-icon {
-    border-radius: 19px;
-    background: #1D1D1D;
-    padding: 17px 12px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.shop__ticket-icon img {
-    width: 65px;
-    height: 42px;
-}
-
-.shop__ticket-yellow {
-    background: linear-gradient(90deg, rgba(203, 139, 4, 0.15) 0%, rgba(203, 139, 4, 0.3) 10%, rgba(43, 43, 43, 0.54) 45%);
-}
-
-.shop__ticket-blue {
-    background: linear-gradient(90deg, rgba(4, 92, 227, 0.15) 0%, rgba(4, 92, 227, 0.3) 10%, rgba(43, 43, 43, 0.54) 45%);
-}
-
-.shop__ticket-buy .button {
-    display: inline;
-}
-.shop-mobileCategory-title{
-    border-radius: 32px 32px 5px 5px;
-    background: #252525;
-    border-bottom: 1px solid white;
-    padding: 26px 12px;
-    font-size: 32px;
-    text-align: center;
-    margin-bottom: 20px;
-
-}
-.shop-mobileCategory-title , .categorySlider{
-    display: none;
-}
-
-
-
-@media (max-width: 768px) {
-    .shop-mobileCategory-title , .categorySlider{
+ .shop {
+     margin-top: 45px;
+     margin-bottom: 70px;
+ }
+
+ .shop__container {
+     max-width: 1300px;
+ }
+
+ .shop__ad-background {
+     overflow: hidden;
+     height: 299px;
+     position: relative;
+     border-radius: 32px 32px 0px 0px;
+     border: 2px solid #3B3B3B;
+     border-bottom: none;
+     padding: 100px 200px 100px 58px;
+ }
+
+ .shop__ad-title {
+     font-size: 36px;
+     font-weight: 700;
+     line-height: 1.18;
+
+ }
+
+ .shop__ad-text {
+     text-align: center;
+     padding: 26px 10px;
+     font-family: 'Poppins', sans-serif;
+     font-size: 24px;
+     font-weight: 900;
+     line-height: 1.04;
+     border-radius: 0px 0px 32px 32px;
+     background: #C80;
+     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+ }
+
+ .swiper-pagination {
+     text-align-last: right;
+     padding: 0 20px 0 0px;
+ }
+
+ .shop .swiper-pagination-horizontal {
+     position: absolute;
+     top: 20px !important;
+     right: 0;
+ }
+
+ /* ========================================================================================== */
+ .shop__notReg {
+     margin-top: 53px;
+     display: flex;
+     padding: 37px 54px;
+     border-radius: 32px;
+     border: 2px solid #3B3B3B;
+     background: rgba(36, 36, 36, 0.53);
+ }
+
+ .notReg__info {
+     margin-left: 20px;
+     flex: 0 0 50%;
+ }
+
+ .notReg__title {
+     font-size: 20px;
+     font-weight: 700;
+ }
+
+ .notReg__text {
+     font-family: "Poppins", sans-serif;
+     font-size: 16px;
+     font-weight: 700;
+     line-height: 1.48;
+
+ }
+
+ .notReg__btn {
+     height: fit-content;
+     font-size: 16px;
+ }
+
+ .notReg__buttons {
+     flex: 1 0 auto;
+     display: flex;
+     align-items: center;
+     justify-content: end;
+     gap: 0 20px;
+ }
+
+ /* ========================================================================== */
+ .shop__content {
+     margin-top: 52px;
+     display: grid;
+     grid-template-columns: 1fr 2fr;
+     gap: 0 37px;
+     grid-template-rows: 1fr;
+
+ }
+
+ .shop__cards {
+     align-self: start;
+     gap: 37px;
+     display: grid;
+     grid-template-columns: 1fr 1fr;
+ }
+
+ .shop__card {
+     position: relative;
+     background-position: center center;
+     background-size: cover;
+     background-repeat: no-repeat;
+     overflow: hidden;
+     height: 621px;
+     border-radius: 32px;
+     border: 2px solid #525252;
+     background: rgba(43, 43, 43, 0.54);
+     display: flex;
+     align-items: center;
+     flex-direction: column;
+ }
+
+
+ .shop__sidebar {
+     align-self: start;
+     border-radius: 32px;
+     background: #242424;
+ }
+
+ .shop__sidebar-header {
+     border-bottom: 1px solid #525252;
+ }
+
+ .shop__sidebar-footer {
+     display: flex;
+     flex-direction: column;
+     gap: 20px 0;
+     border-top: 1px solid #525252;
+     padding: 10px 22px 24px 22px;
+ }
+
+ .shop__sidebar-footer .shop__sidebar-footer-ticket,
+ .shop__sidebar-footer-skin {
+     cursor: pointer;
+     border-radius: 20px;
+     padding: 16px 22px 16px 22px;
+     color: #9C9C9C;
+     font-family: 'Poppins', sans-serif;
+     font-size: 15px;
+     border: 2px solid transparent;
+     font-weight: 900;
+     display: flex;
+     align-items: center;
+     gap: 0 7px;
+     transition: 0.3s ease-in-out;
+ }
+
+ .shop__sidebar-footer .shop__sidebar-footer-ticket:hover,
+ .shop__sidebar-title:hover,
+ .shop__sidebar-footer-skin:hover {
+     border: 2px solid var(--colors-neutral-800, #3B3B3B);
+     background: var(--colors-neutral-900, #242424);
+ }
+
+ .shop__sidebar-header p {
+     padding: 30px 44px;
+     font-size: 32px;
+     font-weight: 700;
+ }
+
+ .shop__sidebar-content {
+     padding: 40px 20px 20px 20px;
+     font-family: "Poppins", sans-serif;
+ }
+
+ .shop__sidebar-content:has(.shop__sidebar-title) {
+     padding: 20px 20px 10px 20px;
+ }
+
+ .shop__sidebar-title {
+     cursor: pointer;
+     fill: #9C9C9C;
+     color: #9C9C9C;
+     font-family: "Poppins", sans-serif;
+     font-size: 15px;
+     font-weight: 900;
+     border-radius: 20px;
+     border: 2px solid transparent;
+     padding: 0 26px;
+     display: flex;
+     align-items: center;
+     gap: 0 15px;
+     transition: 0.3s ease-in;
+ }
+
+ .shop__sidebar-title {
+     padding: 22px 26px;
+ }
+
+ .shop__sidebar-title-active:hover,
+ .shop__sidebar-footer-active .shop__sidebar-footer-ticket:hover {
+     border: 2px solid var(--colors-blue-400, #6BA6FF);
+     background: var(--colors-blue-600, #0A6CFF);
+ }
+
+ .shop__sidebar-title-active {
+     padding: 22px 26px;
+ }
+
+ .shop__sidebar-title-active svg path,
+ .shop__sidebar-footer-active div svg path {
+     fill-opacity: 1;
+ }
+
+ .shop__sidebar-footer-active {
+     border-top: 0;
+ }
+
+ .shop__sidebar-title-active,
+ .shop__sidebar-footer-active .shop__sidebar-footer-ticket {
+     fill: white;
+     color: white;
+     border: 2px solid #004BBD;
+     background: #005AE0;
+ }
+
+ .shop__sidebar-footer-active div img {
+     fill: white;
+ }
+
+ .shop__sidebar-title-active+.shop__sidebar-nav {
+     display: flex;
+ }
+
+ .shop__sidebar-title img {
+     margin-top: -4px;
+ }
+
+
+ .shop__sidebar-nav {
+     list-style: none;
+     padding: 24px 8px 0 8px;
+     display: none;
+     margin: 0;
+     flex-direction: column;
+     gap: 10px 0;
+ }
+
+ .shop__sidebar-link {
+     border: 2px solid transparent;
+     border-radius: 31px;
+     padding: 14px 16px;
+     font-family: 'Poppins', sans-serif;
+     font-size: 11px;
+     font-weight: 900;
+     color: rgba(234, 234, 234, 0.35);
+     display: flex;
+     align-items: center;
+     gap: 0 8px;
+     transition: 0.2s ease-in;
+ }
+
+ .shop__sidebar-link svg path {
+     fill-opacity: 0.24;
+ }
+
+ .shop__sidebar-link-active {
+     border-radius: 31px;
+     border: 1px solid var(--colors-blue-950, #00255C);
+     background: var(--colors-blue-800, #004BBD);
+     color: white;
+     position: relative;
+ }
+
+ .shop__sidebar-link-active:hover {
+     border: 1px solid var(--colors-blue-400, #6BA6FF) !important;
+     background: var(--colors-blue-600, #0A6CFF);
+ }
+
+ .shop__sidebar-link-active::after {
+     content: "";
+     position: absolute;
+     background-image: url(../../../public/svg/arrowRigth.svg);
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+     width: 16px;
+     height: 13px;
+     z-index: 90;
+     right: 20px;
+ }
+
+ .shop__sidebar-link-active svg path {
+     fill-opacity: 1;
+ }
+
+ .shop__sidebar-link:hover {
+     border: 2px solid var(--colors-neutral-800, #3B3B3B)
+ }
+
+
+
+
+ .shop__tickets {
+     display: flex;
+ }
+
+ .shop__sidebar-cosmetics+.shop__market .shop__tickets {
+     display: none;
+ }
+
+ .shop__cards {
+     display: none;
+ }
+
+ .shop__sidebar-cosmetics+.shop__market .shop__cards {
+     display: grid;
+ }
+
+ .shop__sidebar-cosmetics+.shop__market .shop__pagination {
+     display: flex;
+ }
+
+ .shop__card-image {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+
+ }
+
+ .shop__card:hover .shop__card-blur {
+     background: rgba(88, 88, 88, 0.54);
+ }
+
+ .shop__card-blur {
+     transition: 0.3s ease-in-out;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     background: rgba(43, 43, 43, 0.54);
+     backdrop-filter: blur(80px);
+     position: absolute;
+     z-index: 1;
+ }
+
+ .shop__card-icon {
+     height: 407px;
+ }
+
+ .shop__card-image,
+ .shop__card-title,
+ .shop__card-buy {
+     position: relative;
+     z-index: 2;
+ }
+
+ .shop__card-title {
+     margin-top: 27px;
+     margin-bottom: 49px;
+     text-align: center;
+     font-size: 32px;
+     font-weight: 700;
+ }
+
+ .shop__card-buy {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     gap: 0 4px;
+ }
+
+ .shop__card-info {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     padding: 5px 5px;
+ }
+
+ .shop__card-button {
+     font-size: 20px;
+ }
+
+ .shop__pagination {
+     margin-top: 75px;
+     display: none;
+     align-items: center;
+     justify-content: center;
+     gap: 0 17px;
+
+ }
+
+ .shop__pagination p {
+     cursor: pointer;
+     font-family: 'Poppins', sans-serif;
+     font-size: 20px;
+     font-weight: 700;
+     padding: 7px 24px;
+     border-radius: 12px;
+     background: #232323;
+ }
+
+ .shop__pagination p.active {
+     background: #257BFB;
+     color: #fff;
+     box-shadow: 0px 6px 36px 0px rgba(37, 123, 251, 0.09);
+ }
+
+ .arrowPagination {
+     cursor: pointer;
+     margin: 0 30px;
+ }
+
+ .arrowPagination-left {
+     transform: rotate(-180deg);
+ }
+
+
+
+
+
+
+
+
+
+ .shop__tickets {
+     border-radius: 32px;
+     overflow: hidden;
+     flex-direction: column;
+     background: rgba(43, 43, 43, 0.54);
+
+ }
+
+ .shop__ticket {
+     display: flex;
+     padding: 62px 44px;
+     align-items: center;
+ }
+
+ .shop__ticket-title {
+     margin-left: 27px;
+     font-size: 32px;
+     font-weight: 700;
+     flex: 1 1 auto;
+ }
+
+ .shop__ticket-buy {
+     display: flex;
+     align-items: center;
+     gap: 0 4px;
+ }
+
+ .shop__ticket-buy .button {
+     font-size: 20px;
+ }
+
+ .shop__ticket-info {
+     padding: 0 4px;
+
+ }
+
+ .shop__ticket-icon {
+     border-radius: 19px;
+     background: #1D1D1D;
+     padding: 17px 12px;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+ }
+
+ .shop__ticket-icon img {
+     width: 65px;
+     height: 42px;
+ }
+
+ .shop__ticket-yellow {
+     background: linear-gradient(90deg, rgba(203, 139, 4, 0.15) 0%, rgba(203, 139, 4, 0.3) 10%, rgba(43, 43, 43, 0.54) 45%);
+ }
+
+ .shop__ticket-blue {
+     background: linear-gradient(90deg, rgba(4, 92, 227, 0.15) 0%, rgba(4, 92, 227, 0.3) 10%, rgba(43, 43, 43, 0.54) 45%);
+ }
+
+ .shop__ticket-buy .button {
+     display: inline;
+ }
+
+ .shop-mobileCategory-title {
+     border-radius: 32px 32px 5px 5px;
+     background: #252525;
+     border-bottom: 1px solid white;
+     padding: 26px 12px;
+     font-size: 32px;
+     text-align: center;
+     margin-bottom: 20px;
+
+ }
+
+ .shop-mobileCategory-title,
+ .categorySlider {
+     display: none;
+ }
+
+
+
+ @media (max-width: 768px) {
+
+     .shop-mobileCategory-title,
+     .categorySlider {
+         display: block;
+         position: sticky;
+         top: 0;
+     }
+
+     .shop__sidebar {
+         display: none;
+     }
+
+     .shop {
+         margin-top: 20px;
+     }
+
+     .swiperSlider p {
+         text-align: left;
+         left: 12px;
+         font-size: 32px;
+     }
+
+     .shop__ad {
+         display: none;
+     }
+
+     .shop__ad-background {
+         padding: 34px 20px 24px 20px;
+         text-align: center;
+     }
+
+     .shop__ad-text {
+         font-size: 12px;
+         text-align: center;
+     }
+
+     .notReg__icon {
+         height: 30px;
+         width: 30px;
+     }
+
+     .shop__notReg {
+         display: none;
+     }
+
+     .notReg__title {
+         font-size: 14px;
+     }
+
+     .notReg__text {
+         font-size: 12px;
+     }
+
+     .notReg__btn {
+         font-size: 12px;
+     }
+
+     .notReg__buttons {
+         justify-content: center;
+     }
+
+     .shop__content {
+         margin-top: 33px;
+         grid-template-columns: 1fr;
+         gap: 12px 0;
+     }
+
+     .shop__cards {
+         height: 500px;
+         overflow-y: scroll;
+         gap: 17px 0;
+         grid-template-columns: 1fr;
+     }
+
+     .shop__card {
+         margin: 0 30px;
+         height: 500px;
+     }
+
+     .shop__card-icon {
+         height: 300px;
+     }
+
+     .shop__sidebar-header p {
+         padding: 17px 34px;
+         font-size: 27px;
+     }
+
+     .shop__sidebar-content {
+         padding: 17px 13px;
+     }
+
+     .shop__sidebar-nav {
+         gap: 5px 0;
+     }
+
+     .shop__sidebar-footer div {
+         padding: 7px;
+     }
+
+     .shop__card-title {
+         font-size: 27px;
+     }
+
+     .shop__card-button {
+         font-size: 13px;
+     }
+
+     .shop__ticket-title {
+         margin-left: 8px;
+         font-size: 13px;
+     }
+
+     .shop__ticket-buy .button {
+         font-size: 10px;
+         padding: 8px;
+     }
+
+     .shop__ticket {
+         padding: 15px;
+     }
+
+     .shop__ticket-icon img {
+         width: 29px;
+         height: 17px;
+
+     }
+
+     .shop__ticket-icon {
+         border-radius: 8px;
+         padding: 9px;
+     }
+
+     .shop__ticket-buy .shop__ticket-info {
+         width: 35px;
+         height: 35px;
+         padding: 0;
+     }
+
+     .category-btn {
+         font-size: 15px;
+         font-weight: 700;
+     }
+     
+   
+    .notAutMobile__Wrapper-active+.notAutMobile {
         display: block;
-        position: sticky;
-        top: 0;
+        margin: 0 auto;
+   
     }
-    .shop__sidebar{
-        display: none;
+   
+    .notAutMobile__Wrapper-active {
+        position: relative;
+        background-color: #292929;
+        width: 100vw;
+        height: 100vh;
+        position: fixed;
+        top: 0px;
+        left: 0;
+        opacity: 0.8;
+        padding: 19px;
+        display: block;
+        z-index: 98;
     }
-    .shop {
-        margin-top: 20px;
-    }
-
-    .swiperSlider p {
-        text-align: left;
-        left: 12px;
-        font-size: 32px;
-    }
-
-    .shop__ad-background {
-        padding: 34px 20px 24px 20px;
-        text-align: center;
-    }
-
-    .shop__ad-text {
-        font-size: 12px;
-        text-align: center;
-    }
-
-    .notReg__icon {
-        height: 30px;
-        width: 30px;
-    }
-
-    .shop__notReg {
-        margin-top: 33px;
-        padding: 15px 16px;
+   
+    .notAutMobile-card-header {
         display: flex;
-        flex-direction: column;
-        gap: 7px 0;
+        justify-content: space-between;
+        margin-bottom: 25px;
     }
-
-    .notReg__title {
-        font-size: 14px;
+   
+    .notAutMobile-card-logo {
+        gap: 0 12px;
+        display: flex;
+        align-items: center;
     }
-
-    .notReg__text {
-        font-size: 12px;
+   
+    .notAutMobile-card-logo img {
+        width: 25px;
+        height: 25px;
     }
-
-    .notReg__btn {
-        font-size: 12px;
-    }
-
-    .notReg__buttons {
-        justify-content: center;
-    }
-
-    .shop__content {
-        margin-top: 33px;
-        grid-template-columns: 1fr;
-        gap: 12px 0;
-    }
-
-    .shop__cards {
-        height: 500px;
-        overflow-y: scroll;
-        gap: 17px 0;
-        grid-template-columns: 1fr;
-    }
-
-    .shop__card {
-        margin: 0 30px;
-        height: 450px;
-    }
-
-    .shop__card-icon {
-        height: 180px;
-    }
-
-    .shop__sidebar-header p {
-        padding: 17px 34px;
-        font-size: 27px;
-    }
-
-    .shop__sidebar-content {
-        padding: 17px 13px;
-    }
-
-    .shop__sidebar-nav {
-        gap: 5px 0;
-    }
-
-    .shop__sidebar-footer div {
-        padding: 7px;
-    }
-
-    .shop__card-title {
-        font-size: 27px;
-    }
-
-    .shop__card-button {
-        font-size: 13px;
-    }
-
-    .shop__ticket-title {
-        margin-left: 8px;
-        font-size: 13px;
-    }
-
-    .shop__ticket-buy .button {
-        font-size: 10px;
-        padding: 8px;
-    }
-
-    .shop__ticket {
-        padding: 15px;
-    }
-
-    .shop__ticket-icon img {
-        width: 29px;
-        height: 17px;
-
-    }
-
-    .shop__ticket-icon {
-        border-radius: 8px;
-        padding: 9px;
-    }
-
-    .shop__ticket-buy .shop__ticket-info {
-        width: 35px;
-        height: 35px;
-        padding: 0;
-    }
-
-    .category-btn {
-        font-size: 15px;
+   
+    .notAutMobile-card-logo-title {
+        font-size: 16px;
         font-weight: 700;
     }
-    
+   
+    .poppup-info {
+        font-family: 'Poppins', sans-serif;
+        font-size: 16px;
+        font-weight: 700;
+        color: #DBDBDB;
+        margin-bottom: 42px;
+    }
+   
+    .notAutMobile a {
+        font-size: 13px;
+        font-weight: 700;
+        padding: 10px 20px;
+    }
 
 
 
 
+
+ }
+
+ .notAutMobile {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 22px;
+    border: 2px solid var(--colors-neutral-800, #3B3B3B);
+    background: rgba(36, 36, 36, 1);
+    position: fixed;
+    top: 219px;
+    width: calc(100% - 38px);
+    left: 19px;
+    padding: 29px 40px 25px 40px;
+    z-index: 99;
 }
+
+ 
