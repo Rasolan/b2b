@@ -8,7 +8,7 @@
     background: rgba(36, 36, 36, 1);
     position: absolute;
     top: -30px;
-    right: 30px;
+    right: 0px;
     padding: 17px;
     transition: 0.2s ease-out;
     opacity: 0;
@@ -16,7 +16,7 @@
 }
 
 .header__nav-card-active {
-    top: calc(100% + 20px);
+    top: calc(100% + 54px);
     opacity: 1;
     transform: scaleY(1);
 }

@@ -55,9 +55,11 @@
 .header__user {
     cursor: pointer;
     width: 26px;
+    margin-top: -10px;
 }
 
 .header__nav-menu {
+    display: flex;
     position: relative;
 }
 
@@ -74,10 +76,11 @@
 }
 @media (max-width: 768px) {
     .header-mobile{
-        padding: 13px 23px;
+        padding: 10px 34px;
         position: relative;
         z-index: 10;
         display: flex;
+        background-color: #1C1C1C;
         justify-content: end;
     }
     .header-mobile img{
@@ -127,5 +130,8 @@
     }
     .NavMenu-Pc{
         display: none;
+    }
+    .header__user{
+        margin-top: 0;
     }
 }

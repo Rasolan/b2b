@@ -1,5 +1,5 @@
 "use client";
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect, Children, PropsWithChildren } from 'react'
 import Image from 'next/image'
 import ShopSlider from '@/components/shopSlider/shopSlider'
 import ShopMobileCategory from '@/components/shopMobileCategore/shopMobileCategory'
@@ -15,6 +15,12 @@ import CarrotSvg from "@/components/svgs/carrot"
 import ParticlesSvg from "@/components/svgs/particles"
 import DollarSvg from "@/components/svgs/dollar"
 import MagicSvg from "@/components/svgs/magic"
+
+
+import AirPlaneSvg from "$/public/svg/airplane.svg"
+import AppsAddSvg from "$/public/svg/appsAdd.svg"
+import UsersSvg from "$/public/svg/users.svg"
+import MountainsSvg from "$/public/svg/mountains.svg"
 import Info from "$/public/svg/info.svg"
 import ArrowPagination from "$/public/svg/arrowPagination.svg"
 import "./style.css"
@@ -60,8 +66,9 @@ const marketCards = [
         'info': "fhjhfksg hghg g ahg h gagl hguweughkdsakg"
     },
 ]
-const page = () => {
+const page = ({ children }: PropsWithChildren<unknown>) => {
     const [loading, setLoading] = useState(false)
+    const [mobileSideBarOpen, setMobileSideBarOpen] = useState(false)
     const [currentPage, setCurrentPage] = useState(1)
     const [cardsPerPage]: any = useState([4])
     const [shopCategory, setShopCategory] = useState("cosmetics")
@@ -84,6 +91,7 @@ const page = () => {
 
     return (
         <section className='shop'>
+            {children}
             <div className="container shop__container">
                 <div>
                     <div onClick={() => { setnotAutMenuState(!notAutMenuSate) }} className={notAutMenuSate ? "notAutMobile__Wrapper notAutMobile__Wrapper-active" : "notAutMobile__Wrapper"}></div>
@@ -123,12 +131,12 @@ const page = () => {
                         <Link href={"/login"} className="button notReg__btn">Авторизоваться</Link>
                     </div>
                 </div>
-                <div className="shop__content">
-                    <div className="shop-mobileCategory-title">Категории товаров</div>
-                    <ShopMobileCategory></ShopMobileCategory>
-                    <div className={shopCategory === "cosmetics" ? 'shop__sidebar shop__sidebar-cosmetics' : 'shop__sidebar'}>
-                        <div className="shop__sidebar-header"><p>Категории</p></div>
-                        <div className="shop__sidebar-content">
+                <div id='category' className="shop__content">
+                    <div onClick={() => setMobileSideBarOpen(true)} className="shop-mobileCategory-title">Категории товаров</div>
+                    <div onClick={() => setMobileSideBarOpen(false)} className={mobileSideBarOpen === true ? 'shop__black-bgc shop__black-bgc-open' : 'shop__black-bgc'}></div>
+                    <div onClick={() => setMobileSideBarOpen(false)} className={shopCategory === "cosmetics" ? 'shop__sidebar shop__sidebar-cosmetics' : 'shop__sidebar'}>
+                        <div className="shop__sidebar-header"><p>Категории</p> <Image src={Close} alt={'close'}></Image></div>
+                        <div  className={mobileSideBarOpen === true ? 'shop__sidebar-content shop__sidebar-content-open' : 'shop__sidebar-content'}>
                             <div onClick={() => setShopCategory('cosmetics')} className={shopCategory === "cosmetics" ? 'shop__sidebar-title shop__sidebar-title-active' : 'shop__sidebar-title'}> <StarSvg />Косметика</div>
                             <ul className='shop__sidebar-nav'>
                                 <li>
@@ -148,27 +156,75 @@ const page = () => {
                                 </li>
                             </ul>
                         </div>
+                        
                         <div className={shopCategory === "ticket" ? 'shop__sidebar-footer shop__sidebar-footer-active' : 'shop__sidebar-footer'}>
                             <div className='shop__sidebar-footer-skin'><MagicSvg />Скины на предметы</div>
                             <div className='shop__sidebar-footer-ticket' onClick={() => setShopCategory('ticket')}><DollarSvg />Проходка на сервер</div>
                         </div>
                     </div>
+                     
+                   
                     <div className="shop__market">
                         <div className="shop__tickets">
                             <div className="shop__ticket shop__ticket-yellow">
-                                <div className="shop__ticket-icon"><Image src={TicketYellow} alt={'ticket'}></Image></div>
-                                <div className="shop__ticket-title">Проходка для друга</div>
-                                <div className="shop__ticket-buy">
-                                    <div className="button shop__ticket-info"><Image height={30} width={30} src={Info} alt={'info'}></Image></div>
-                                    <div className="button">Купить  60р</div>
+                                <div className="shop__ticket-blur"></div>
+                                <div className="shop__ticket-main">
+                                    <div className="shop__ticket-icon"><Image src={TicketYellow} alt={'ticket'}></Image></div>
+                                    <div className="shop__ticket-title">Проходка на сервер</div>
+                                    <div className="shop__ticket-price">100₽</div>
+                                    <div className="shop__ticket-subtitle">Навсегда</div>
+                                    <div className="shop__ticket-buy">
+                                        <div className="button button-yellow">Купить</div>
+                                    </div>
+                                </div>
+                                <div className="shop__ticket-info">
+                                    <ul>
+                                        <li>
+                                            <Image src={AirPlaneSvg} alt={'icon'}></Image>
+                                            Моментальный вход на сервер
+                                        </li>
+                                        <li>
+                                            <Image src={AppsAddSvg} alt={'icon'}></Image>
+                                            Доступ ко всему функционалу сервера
+                                        </li>
+                                        <li>
+                                            <Image src={UsersSvg} alt={'icon'}></Image>
+                                            Вход без очереди
+                                        </li>
+                                        <li>
+                                            <Image src={MountainsSvg} alt={'icon'}></Image>
+                                            Доступ ко всем сезонам
+                                        </li>
+                                    </ul>
                                 </div>
                             </div>
+                            <div className="shop__ticket-line"></div>
                             <div className="shop__ticket shop__ticket-blue">
-                                <div className="shop__ticket-icon"><Image src={TicketBlue} alt={'ticket'}></Image></div>
-                                <div className="shop__ticket-title">Проходка на сервер</div>
-                                <div className="shop__ticket-buy">
-                                    <div className="button shop__ticket-info"><Image height={30} width={30} src={Info} alt={'info'}></Image></div>
-                                    <div className="button">Купить 100р</div>
+                                <div className="shop__ticket-blur shop__ticket-blur-blue"></div>
+                                <div className="shop__ticket-main">
+                                    <div className="shop__ticket-icon"><Image src={TicketBlue} alt={'ticket'}></Image></div>
+                                    <div className="shop__ticket-title">Проходка для друга</div>
+                                    <div className="shop__ticket-price">60₽</div>
+                                    <div className="shop__ticket-subtitle">Навсегда</div>
+                                    <div className="shop__ticket-buy">
+                                        <div className="button">Купить</div>
+                                    </div>
+                                </div>
+                                <div className="shop__ticket-info">
+                                    <ul>
+                                        <li>
+                                            <Image src={AirPlaneSvg} alt={'icon'}></Image>
+                                            Моментальный вход на сервер
+                                        </li>
+                                        <li>
+                                            <Image src={AppsAddSvg} alt={'icon'}></Image>
+                                            Доступ ко всему функционалу сервера
+                                        </li>
+                                        <li>
+                                            <Image src={MountainsSvg} alt={'icon'}></Image>
+                                            Доступ ко всем сезонам
+                                        </li>
+                                    </ul>
                                 </div>
                             </div>
                         </div>

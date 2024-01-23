@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 
 import Image from 'next/image'
 import Link from 'next/link'
-import User from '../../../public/svg/user.svg'
+import User from '../../../public/svg/signIn.svg'
 import Close from '$/public/svg/close.svg'
 import LoginUser from '../../../public/svg/login-user.svg'
 import LoginUserBlue from '../../../public/svg/login-user-blue.svg'
