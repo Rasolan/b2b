@@ -1,6 +1,0 @@
-services:
-  frontend:
-    image: block2box/frontend
-    build: ./frontend
-    ports:
-      - 3000:3000

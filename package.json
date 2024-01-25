@@ -1,13 +1,23 @@
 {
-  "name": "block2box.com",
-  "private": true,
+  "name": "block2box",
   "version": "0.1.0",
-  "description": "block2box.com website",
-  "author": {
-    "name": "suconakh",
-    "email": "suconakh@oru.lol"
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
   },
-  "workspaces": [
-    "frontend/*"
-  ]
+  "dependencies": {
+    "next": "13.5.6",
+    "react": "^18",
+    "react-dom": "^18",
+    "swiper": "^11.0.5"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "typescript": "^5"
+  }
 }
